@@ -48,11 +48,11 @@
     <div class="flex h-screen bg-[#BBF1FA] gap-3 p-3">
         <!-- image -->
         <div class="w-1/2 p-20 flex justify-center">
-            <img src="https://picsum.photos/300/200" alt="">
+            <img src="1k.jpg" alt="">
         </div>
 
         <div class="flex w-1/2 flex-col justify-center items-end p-10">
-            <h1 class="text-7xl text-end font-bold">ROSIE JANE P. SIOSAN</h1>
+            <h1 class="text-7xl text-end font-bold">DR. ROSIE JANE P. SIOSAN</h1>
             <p class="text-end text-xl mt-5">An ICT Assessment Test is a comprehensive evaluation of an individual's proficiency in information technology, covering topics such as hardware, software, networking, and cybersecurity. It is commonly used in education and employment settings to assess digital competence and readiness.</p>
         </div>  
     </div>
@@ -62,23 +62,23 @@
 
         <div class="flex w-1/2 flex-col justify-center items-end p-10">
             <!-- use text-start to start the paragraph in left and end to right -->
-            <h1 class="text-7xl text-start font-bold">ROSIE JANE P. SIOSAN</h1>
+            <h1 class="text-7xl text-start font-bold">ENGR. MARILYN P. MONCAL</h1>
             <p class="text-start text-xl mt-5">An ICT Assessment Test is a comprehensive evaluation of an individual's proficiency in information technology, covering topics such as hardware, software, networking, and cybersecurity. It is commonly used in education and employment settings to assess digital competence and readiness.</p>
         </div>
         <!-- image -->
         <div class="w-1/2 p-20 flex justify-center">
-            <img src="https://picsum.photos/300/200" alt="">
+            <img src="1b.jpg" alt="">
         </div>  
     </div>
     <!-- left image -->
     <div class="flex h-screen bg-[#BBF1FA] gap-3 p-3">
         <!-- image -->
         <div class="w-1/2 p-20 flex justify-center">
-            <img src="https://picsum.photos/300/200" alt="">
+            <img src="1h.jpg" alt="">
         </div>
 
         <div class="flex w-1/2 flex-col justify-center items-end p-10">
-            <h1 class="text-7xl text-end font-bold">ROSIE JANE P. SIOSAN</h1>
+            <h1 class="text-7xl text-end font-bold">ENGR. MA. ELENA GRACE P. PARCON</h1>
             <p class="text-end text-xl mt-5">An ICT Assessment Test is a comprehensive evaluation of an individual's proficiency in information technology, covering topics such as hardware, software, networking, and cybersecurity. It is commonly used in education and employment settings to assess digital competence and readiness.</p>
         </div>  
     </div>
@@ -88,23 +88,23 @@
 
         <div class="flex w-1/2 flex-col justify-center items-end p-10">
             <!-- use text-start to start the paragraph in left and end to right -->
-            <h1 class="text-7xl text-start font-bold">ROSIE JANE P. SIOSAN</h1>
+            <h1 class="text-7xl text-start font-bold">PROF. JANET FRANCISCO</h1>
             <p class="text-start text-xl mt-5">An ICT Assessment Test is a comprehensive evaluation of an individual's proficiency in information technology, covering topics such as hardware, software, networking, and cybersecurity. It is commonly used in education and employment settings to assess digital competence and readiness.</p>
         </div>
         <!-- image -->
         <div class="w-1/2 p-20 flex justify-center">
-            <img src="https://picsum.photos/300/200" alt="">
+            <img src="1o.jpg" alt="">
         </div>  
     </div>
     <!-- left image -->
     <div class="flex h-screen bg-[#BBF1FA] gap-3 p-3">
         <!-- image -->
         <div class="w-1/2 p-20 flex justify-center">
-            <img src="https://picsum.photos/300/200" alt="">
+            <img src="1L.JPG" alt="">
         </div>
 
         <div class="flex w-1/2 flex-col justify-center items-end p-10">
-            <h1 class="text-7xl text-end font-bold">ROSIE JANE P. SIOSAN</h1>
+            <h1 class="text-7xl text-end font-bold">DR. RITA JAUDIAN</h1>
             <p class="text-end text-xl mt-5">An ICT Assessment Test is a comprehensive evaluation of an individual's proficiency in information technology, covering topics such as hardware, software, networking, and cybersecurity. It is commonly used in education and employment settings to assess digital competence and readiness.</p>
         </div>  
     </div>
@@ -114,23 +114,23 @@
 
         <div class="flex w-1/2 flex-col justify-center items-end p-10">
             <!-- use text-start to start the paragraph in left and end to right -->
-            <h1 class="text-7xl text-start font-bold">ROSIE JANE P. SIOSAN</h1>
+            <h1 class="text-7xl text-start font-bold">PROF. BERNADETTE SILVEDERIO</h1>
             <p class="text-start text-xl mt-5">An ICT Assessment Test is a comprehensive evaluation of an individual's proficiency in information technology, covering topics such as hardware, software, networking, and cybersecurity. It is commonly used in education and employment settings to assess digital competence and readiness.</p>
         </div>
         <!-- image -->
         <div class="w-1/2 p-20 flex justify-center">
-            <img src="https://picsum.photos/300/200" alt="">
+            <img src="1N.JPG" alt="">
         </div>  
     </div>
     <!-- left image -->
     <div class="flex h-screen bg-[#BBF1FA] gap-3 p-3">
         <!-- image -->
         <div class="w-1/2 p-20 flex justify-center">
-            <img src="https://picsum.photos/300/200" alt="">
+            <img src="1F.JPG" alt="">
         </div>
 
         <div class="flex w-1/2 flex-col justify-center items-end p-10">
-            <h1 class="text-7xl text-end font-bold">ROSIE JANE P. SIOSAN</h1>
+            <h1 class="text-7xl text-end font-bold">MR. WINSTON CORNEJA</h1>
             <p class="text-end text-xl mt-5">An ICT Assessment Test is a comprehensive evaluation of an individual's proficiency in information technology, covering topics such as hardware, software, networking, and cybersecurity. It is commonly used in education and employment settings to assess digital competence and readiness.</p>
         </div>  
     </div>
@@ -140,23 +140,23 @@
 
         <div class="flex w-1/2 flex-col justify-center items-end p-10">
             <!-- use text-start to start the paragraph in left and end to right -->
-            <h1 class="text-7xl text-start font-bold">ROSIE JANE P. SIOSAN</h1>
+            <h1 class="text-7xl text-start font-bold">PROF. LESTER DELA CRUZ</h1>
             <p class="text-start text-xl mt-5">An ICT Assessment Test is a comprehensive evaluation of an individual's proficiency in information technology, covering topics such as hardware, software, networking, and cybersecurity. It is commonly used in education and employment settings to assess digital competence and readiness.</p>
         </div>
         <!-- image -->
         <div class="w-1/2 p-20 flex justify-center">
-            <img src="https://picsum.photos/300/200" alt="">
+            <img src="1I.JPG" alt="">
         </div>  
     </div>
     <!-- left image -->
     <div class="flex h-screen bg-[#BBF1FA] gap-3 p-3">
         <!-- image -->
         <div class="w-1/2 p-20 flex justify-center">
-            <img src="https://picsum.photos/300/200" alt="">
+            <img src="1C.JPG" alt="">
         </div>
 
         <div class="flex w-1/2 flex-col justify-center items-end p-10">
-            <h1 class="text-7xl text-end font-bold">ROSIE JANE P. SIOSAN</h1>
+            <h1 class="text-7xl text-end font-bold">PROF. EDISON SILVESTRE</h1>
             <p class="text-end text-xl mt-5">An ICT Assessment Test is a comprehensive evaluation of an individual's proficiency in information technology, covering topics such as hardware, software, networking, and cybersecurity. It is commonly used in education and employment settings to assess digital competence and readiness.</p>
         </div>  
     </div>
@@ -166,23 +166,23 @@
 
         <div class="flex w-1/2 flex-col justify-center items-end p-10">
             <!-- use text-start to start the paragraph in left and end to right -->
-            <h1 class="text-7xl text-start font-bold">ROSIE JANE P. SIOSAN</h1>
+            <h1 class="text-7xl text-start font-bold">PROF. JEANY ROSE IGNACIO</h1>
             <p class="text-start text-xl mt-5">An ICT Assessment Test is a comprehensive evaluation of an individual's proficiency in information technology, covering topics such as hardware, software, networking, and cybersecurity. It is commonly used in education and employment settings to assess digital competence and readiness.</p>
         </div>
         <!-- image -->
         <div class="w-1/2 p-20 flex justify-center">
-            <img src="https://picsum.photos/300/200" alt="">
+            <img src="1A.JPG" alt="">
         </div>  
     </div>
     <!-- left image -->
     <div class="flex h-screen bg-[#BBF1FA] gap-3 p-3">
         <!-- image -->
         <div class="w-1/2 p-20 flex justify-center">
-            <img src="https://picsum.photos/300/200" alt="">
+            <img src="1P.JPG" alt="">
         </div>
 
         <div class="flex w-1/2 flex-col justify-center items-end p-10">
-            <h1 class="text-7xl text-end font-bold">ROSIE JANE P. SIOSAN</h1>
+            <h1 class="text-7xl text-end font-bold">MS. CLAUDINE MAE LEYSA</h1>
             <p class="text-end text-xl mt-5">An ICT Assessment Test is a comprehensive evaluation of an individual's proficiency in information technology, covering topics such as hardware, software, networking, and cybersecurity. It is commonly used in education and employment settings to assess digital competence and readiness.</p>
         </div>  
     </div>
@@ -192,23 +192,23 @@
 
         <div class="flex w-1/2 flex-col justify-center items-end p-10">
             <!-- use text-start to start the paragraph in left and end to right -->
-            <h1 class="text-7xl text-start font-bold">ROSIE JANE P. SIOSAN</h1>
+            <h1 class="text-7xl text-start font-bold">PROF. GENEFERE VA-AY</h1>
             <p class="text-start text-xl mt-5">An ICT Assessment Test is a comprehensive evaluation of an individual's proficiency in information technology, covering topics such as hardware, software, networking, and cybersecurity. It is commonly used in education and employment settings to assess digital competence and readiness.</p>
         </div>
         <!-- image -->
         <div class="w-1/2 p-20 flex justify-center">
-            <img src="https://picsum.photos/300/200" alt="">
+            <img src="1J.JPG" alt="">
         </div>  
     </div>
     <!-- left image -->
     <div class="flex h-screen bg-[#BBF1FA] gap-3 p-3">
         <!-- image -->
         <div class="w-1/2 p-20 flex justify-center">
-            <img src="https://picsum.photos/300/200" alt="">
+            <img src="1D.JPG" alt="">
         </div>
 
         <div class="flex w-1/2 flex-col justify-center items-end p-10">
-            <h1 class="text-7xl text-end font-bold">ROSIE JANE P. SIOSAN</h1>
+            <h1 class="text-7xl text-end font-bold">MR. ALVIN VILLARUEL</h1>
             <p class="text-end text-xl mt-5">An ICT Assessment Test is a comprehensive evaluation of an individual's proficiency in information technology, covering topics such as hardware, software, networking, and cybersecurity. It is commonly used in education and employment settings to assess digital competence and readiness.</p>
         </div>  
     </div>
@@ -218,23 +218,23 @@
 
         <div class="flex w-1/2 flex-col justify-center items-end p-10">
             <!-- use text-start to start the paragraph in left and end to right -->
-            <h1 class="text-7xl text-start font-bold">ROSIE JANE P. SIOSAN</h1>
+            <h1 class="text-7xl text-start font-bold">MR. RICKY CYRIL PERUCHO</h1>
             <p class="text-start text-xl mt-5">An ICT Assessment Test is a comprehensive evaluation of an individual's proficiency in information technology, covering topics such as hardware, software, networking, and cybersecurity. It is commonly used in education and employment settings to assess digital competence and readiness.</p>
         </div>
         <!-- image -->
         <div class="w-1/2 p-20 flex justify-center">
-            <img src="https://picsum.photos/300/200" alt="">
+            <img src="1G.JPG" alt="">
         </div>  
     </div>
     <!-- left image -->
     <div class="flex h-screen bg-[#BBF1FA] gap-3 p-3">
         <!-- image -->
         <div class="w-1/2 p-20 flex justify-center">
-            <img src="https://picsum.photos/300/200" alt="">
+            <img src="1M.JPG" alt="">
         </div>
 
         <div class="flex w-1/2 flex-col justify-center items-end p-10">
-            <h1 class="text-7xl text-end font-bold">ROSIE JANE P. SIOSAN</h1>
+            <h1 class="text-7xl text-end font-bold">MS. NICOLE GADONG</h1>
             <p class="text-end text-xl mt-5">An ICT Assessment Test is a comprehensive evaluation of an individual's proficiency in information technology, covering topics such as hardware, software, networking, and cybersecurity. It is commonly used in education and employment settings to assess digital competence and readiness.</p>
         </div>  
     </div>
@@ -244,7 +244,7 @@
 
         <div class="flex w-1/2 flex-col justify-center items-end p-10">
             <!-- use text-start to start the paragraph in left and end to right -->
-            <h1 class="text-7xl text-start font-bold">ROSIE JANE P. SIOSAN</h1>
+            <h1 class="text-7xl text-start font-bold">MR. RHENLY FANGO</h1>
             <p class="text-start text-xl mt-5">An ICT Assessment Test is a comprehensive evaluation of an individual's proficiency in information technology, covering topics such as hardware, software, networking, and cybersecurity. It is commonly used in education and employment settings to assess digital competence and readiness.</p>
         </div>
         <!-- image -->
