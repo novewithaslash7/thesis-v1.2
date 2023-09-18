@@ -9,7 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div class="flex justify-center items-center  h-[100vh] bg-[url(../../bg1.JPG)] bg-cover">
+    <div class="flex justify-center items-center  h-[100vh] bg-[url(../bg1.JPG)] bg-cover">
         <div class="p-5
             w-1/3
             border-0
