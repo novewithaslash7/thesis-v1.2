@@ -46,12 +46,13 @@
         $c_answer = $_POST['c_answer'];
         $d_answer = $_POST['d_answer'];
         $correct_answer = $_POST['correct_answer'];
+        $curriculum = $_POST['curriculum'];
         $type = $_POST['type'];
 
-        $INSERT = "INSERT INTO questions (question, a_answer, b_answer, c_answer, d_answer, correct_answer, type) VALUES (?,?,?,?,?,?,?)";
+        $INSERT = "INSERT INTO questions (question, a_answer, b_answer, c_answer, d_answer, correct_answer, curriculum, type) VALUES (?,?,?,?,?,?,?,?)";
         
         $stmt = $conn->prepare($INSERT);
-        $stmt->bind_param("sssssss", $question, $a_answer, $b_answer, $c_answer, $d_answer, $correct_answer, $type);
+        $stmt->bind_param("ssssssss", $question, $a_answer, $b_answer, $c_answer, $d_answer, $correct_answer, $curriculum, $type);
 
         if ($stmt->execute()) {
             header("location: ../questions.php");
