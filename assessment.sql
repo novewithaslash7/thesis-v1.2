@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jul 30, 2023 at 04:13 PM
+-- Generation Time: Sep 23, 2023 at 02:47 PM
 -- Server version: 10.4.28-MariaDB
--- PHP Version: 8.0.28
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -55,6 +55,7 @@ CREATE TABLE `questions` (
   `c_answer` varchar(255) NOT NULL,
   `d_answer` varchar(255) NOT NULL,
   `correct_answer` varchar(255) NOT NULL,
+  `curriculum` varchar(255) NOT NULL,
   `type` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 

@@ -44,6 +44,12 @@
         </li>
     </div>
 </div>
+    <div class="w-full  bg-[url(./top.jpg)] bg-cover bg-center  ">
+        <div class="bg-gray-800/40 w-full h-full flex items-center justify-center py-20">
+            <h1 class="font-bold text-white drop-shadow-2xl text-9xl">Faculty</h1>
+        </div>
+        
+    </div>
     <!-- left image -->
     <div class="flex h-screen bg-[#BBF1FA] gap-3 p-3">
         <!-- image -->

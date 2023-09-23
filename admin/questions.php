@@ -39,9 +39,9 @@
         </div>
     </div>
 
-    <div class="h-[100vh] flex flex-row">
-        <div class="p-10 flex justify-center items-center h-full w-1/2 m-5 ">
-            <div class="bg-gray-200 flex flex-col p-5 border rounded-xl w-full">
+    <div class=" flex flex-col w-screen">
+        <div class="p-10 flex justify-center items-center w-full m-5 ">
+            <div class="bg-gray-200 flex flex-col p-5 border w-1/2 rounded-xl">
                 <form action="./functions/actions.php" method="POST" class="flex flex-col justify-center items-center gap-5">
                     
                     <h2>Questions</h2>
@@ -52,6 +52,11 @@
                     <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="c_answer" placeholder="C Answer"> 
                     <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="d_answer" placeholder="D Answer">
                     <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="correct_answer" placeholder="Correct Answer">
+                    <select required class="p-3 bg-white w-full border rounded-xl border-solid" name="curriculum">
+                        <option selected hidden value="">Curriculum</option>
+                        <option value="BS Information Technology">BS Information Technology</option>
+                        <option value="BS Information Systems">BS Information Systems</option>
+                    </select>
                     <select required class="p-3 bg-white w-full border rounded-xl border-solid" name="type">
                         <option selected hidden value="">Type</option>
                         <option value="Easy">Easy</option>
@@ -64,7 +69,7 @@
             </div>
         </div>
 
-        <div class="p-5 py-10 flex justify-center items-start h-full w-1/2 overflow-scroll">
+        <div class="p-5 py-10 flex justify-center items-start h-full w-full overflow-scroll">
             <div>
                 <table class="table-fixed border border-1 border-solid w-full">
                 
@@ -75,6 +80,7 @@
                     <th>C Answer</th>
                     <th>D Answer</th>
                     <th>Correct Answer</th>
+                    <th>Curriculum</th>
                     <th>Type</th>
                     <th>Actions</th>
                 </tr>
@@ -93,6 +99,7 @@
                     <td><?php echo $row['c_answer'] ?></td>
                     <td><?php echo $row['d_answer'] ?></td>
                     <td><?php echo $row['correct_answer'] ?></td>
+                    <td><?php echo $row['curriculum'] ?></td>
                     <td><?php echo $row['type'] ?></td>
                     <td>
                         <div class="flex justify-around">
