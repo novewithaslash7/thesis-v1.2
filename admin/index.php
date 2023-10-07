@@ -18,10 +18,10 @@
             ">
             <form action="./functions/loginFunc.php" method="POST" class="flex flex-col justify-center items-center gap-5">
                 
-                <h2>Welcome to ICT Assessment Test | Admin</h2>
+                <h2 class="font-bold">Welcome to ICT Assessment Test | Admin</h2>
                 <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="username" placeholder="Username">
                 <input required class="p-3 w-full border rounded-xl border-solid" type="password" name="password" placeholder="Password">
-                <input class="bg-gray-100 p-3 w-full border rounded-xl hover:bg-[#F3E99F] " type="submit" name="login" value="LOG IN">
+                <input class="bg-gray-100 p-3 w-full border rounded-xl hover:bg-[#F3E99F] font-bold " type="submit" name="login" value="LOG IN">
                 <!-- <a class="hover:underline" href="./register.php">Don't Have an Account? SIGN UP</a> -->
             </form>
         </div>

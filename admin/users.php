@@ -41,10 +41,10 @@
 
     <div class="h-[100vh] flex flex-row">
         <div class="p-10 flex justify-center items-center h-full w-1/2 ">
-            <div class="bg-gray-200 flex flex-col p-5 border rounded-xl w-full">
+            <div class="bg-[#FF6D60]/70 flex flex-col p-5 border rounded-xl w-full">
                 <form action="./functions/actions.php" method="POST" class="flex flex-col justify-center items-center gap-5">
                     
-                    <h2>Users</h2>
+                    <h2 class="font-bold">Users</h2>
                     <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="name" placeholder="Name">
                     <select class="p-3 bg-white w-full border rounded-xl border-solid" name="curriculum">
                         <option selected hidden value="">Curriculum</option>
@@ -103,12 +103,12 @@
                         while($row = mysqli_fetch_assoc($result)){
                 ?>
                     <tr>
-                        <td><?php echo $row['student_id'] ?></td>
-                        <td><?php echo $row['name'] ?></td>
-                        <td><?php echo $row['curriculum'] ?></td>
-                        <td><?php echo $row['year'] ?></td>
-                        <td><?php echo $row['section'] ?></td>
-                        <td>
+                        <td class="p-3"><?php echo $row['student_id'] ?></td>
+                        <td class="p-3"><?php echo $row['name'] ?></td>
+                        <td class="p-3"><?php echo $row['curriculum'] ?></td>
+                        <td class="p-3"><?php echo $row['year'] ?></td>
+                        <td class="p-3"><?php echo $row['section'] ?></td>
+                        <td class="p-3">
                             <div class="flex justify-around">
                                 <button>Edit</button>
                                 <button>Delete</button> 

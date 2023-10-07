@@ -41,10 +41,10 @@
 
     <div class=" flex flex-col w-screen">
         <div class="p-10 flex justify-center items-center w-full m-5 ">
-            <div class="bg-gray-200 flex flex-col p-5 border w-1/2 rounded-xl">
+            <div class="bg-[#FF6D60]/70 flex flex-col p-5 border w-1/2 rounded-xl">
                 <form action="./functions/actions.php" method="POST" class="flex flex-col justify-center items-center gap-5">
                     
-                    <h2>Questions</h2>
+                    <h2 class="font-bold">Questions</h2>
                     <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="question" placeholder="Question">
 
                     <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="a_answer" placeholder="A Answer">

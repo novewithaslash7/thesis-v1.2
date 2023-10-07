@@ -21,7 +21,7 @@
                 <?php
                 
                 ?>
-                <h2>Welcome to ICT Assessment Test</h2>
+                <h2 class="font-bold">Welcome to ICT Assessment Test</h2>
                 <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="student_id" placeholder="Student ID">
                 <input required class="p-3 w-full border rounded-xl border-solid" type="password" name="password" placeholder="Password">
                 <input class="bg-gray-100 p-3 w-full border rounded-xl hover:bg-[#F3E99F] " type="submit" name="login" value="SIGN IN">

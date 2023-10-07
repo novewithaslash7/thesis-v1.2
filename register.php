@@ -21,7 +21,7 @@
                 <?php
                 
                 ?>
-                <h2>Welcome to ICT Assessment Test</h2>
+                <h2 class="font-bold">Welcome to ICT Assessment Test</h2>
                 <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="name" placeholder="Name">
                 <select class="p-3 w-full border rounded-xl border-solid" name="curriculum" placeholder="curriculum">
                     <option selected hidden value="">Curriculum</option>
