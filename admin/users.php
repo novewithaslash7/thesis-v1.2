@@ -43,40 +43,92 @@
         <div class="p-10 flex justify-center items-center h-full w-1/2 ">
             <div class="bg-[#FF6D60]/70 flex flex-col p-5 border rounded-xl w-full">
                 <form action="./functions/actions.php" method="POST" class="flex flex-col justify-center items-center gap-5">
-                    
-                    <h2 class="font-bold">Users</h2>
-                    <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="name" placeholder="Name">
-                    <select class="p-3 bg-white w-full border rounded-xl border-solid" name="curriculum">
-                        <option selected hidden value="">Curriculum</option>
-                        <option value="BS Information Technology">BS Information Technology</option>
-                        <option value="BS Information Systems">BS Information Systems</option>
+                    <?php
+                        if(isset($_GET['student_id'])){
+                            $student_id = $_GET['student_id'];
+                            $name = $_GET['name'];
+                            $curriculum = $_GET['curriculum'];
+                            $year = $_GET['year'];
+                            $section = $_GET['section'];
+                            $password = $_GET['password'];
 
-                    </select>
-                    
-                    <div class="flex w-full flex-row gap-2">
-                        
-                        <select class="p-3 bg-white w-1/2 border rounded-xl border-solid" name="year">
-                            <option selected hidden value="">Year</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select>
-                        
-                        <select class="p-3 bg-white w-1/2 border rounded-xl border-solid" name="section">
-                            <option selected hidden value="">Section</option>
-                            <option value="A">A</option>
-                            <option value="B">B</option>
-                            <option value="C">C</option>
-                            <option value="D">D</option>
-                        </select>
-                        
-                    </div>                
+                            echo '
+                                <h2 class="font-bold">Users</h2>
+                                <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="name" value="'.$name.'" placeholder="Name">
+                                <select class="p-3 bg-white w-full border rounded-xl border-solid" name="curriculum">
+                                    <option '.(($curriculum == "BS Information Technology")? 'selected':'').' value="BS Information Technology">BS Information Technology</option>
+                                    <option '.(($curriculum == "BS Information Systems")? 'selected':'').' value="BS Information Systems">BS Information Systems</option>
 
-                    <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="student_id" placeholder="Student ID">
-                    <input required class="p-3 w-full border rounded-xl border-solid" type="password" name="password" placeholder="Password">
+                                </select>
+                                
+                                <div class="flex w-full flex-row gap-2">
+                                    
+                                    <select class="p-3 bg-white w-1/2 border rounded-xl border-solid" name="year">
+                                        <option '.(($year == "1")? 'selected':'').' value="1">1</option>
+                                        <option '.(($year == "2")? 'selected':'').' value="2">2</option>
+                                        <option '.(($year == "3")? 'selected':'').' value="3">3</option>
+                                        <option '.(($year == "4")? 'selected':'').' value="4">4</option>
+                                    </select>
+                                    
+                                    <select class="p-3 bg-white w-1/2 border rounded-xl border-solid" name="section">
+                                        <option '.(($section == "A")? 'selected':'').' value="A">A</option>
+                                        <option '.(($section == "B")? 'selected':'').' value="B">B</option>
+                                        <option '.(($section == "C")? 'selected':'').' value="C">C</option>
+                                        <option '.(($section == "D")? 'selected':'').' value="D">D</option>
+                                    </select>
+                                    
+                                </div>                
+
+                                <input required class="p-3 w-full border rounded-xl border-solid" type="text" value="'.$student_id.'" name="student_id" placeholder="Student ID">
+                                <input required class="p-3 w-full border rounded-xl border-solid" type="password" value="'.$password.'" name="password" placeholder="Password">
+                                
+                                <div class="flex gap-3 w-full">
+                                    <input class="bg-gray-100 p-3 flex-grow border rounded-xl hover:bg-[#F3E99F] " type="submit" name="updateUser" value="UPDATE"> 
+                                    <input class="bg-gray-100 p-3 flex-grow border rounded-xl hover:bg-[#F3E99F] " type="submit" name="cancelUser" value="CANCEL">
+                                
+                                </div>
+                            ';
+
+                        }else{
+                            echo '
+                                <h2 class="font-bold">Users</h2>
+                                <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="name" placeholder="Name">
+                                <select class="p-3 bg-white w-full border rounded-xl border-solid" name="curriculum">
+                                    <option selected hidden value="">Curriculum</option>
+                                    <option value="BS Information Technology">BS Information Technology</option>
+                                    <option value="BS Information Systems">BS Information Systems</option>
+
+                                </select>
+                                
+                                <div class="flex w-full flex-row gap-2">
+                                    
+                                    <select class="p-3 bg-white w-1/2 border rounded-xl border-solid" name="year">
+                                        <option selected hidden value="">Year</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                    
+                                    <select class="p-3 bg-white w-1/2 border rounded-xl border-solid" name="section">
+                                        <option selected hidden value="">Section</option>
+                                        <option value="A">A</option>
+                                        <option value="B">B</option>
+                                        <option value="C">C</option>
+                                        <option value="D">D</option>
+                                    </select>
+                                    
+                                </div>                
+
+                                <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="student_id" placeholder="Student ID">
+                                <input required class="p-3 w-full border rounded-xl border-solid" type="password" name="password" placeholder="Password">
+                                
+                                <input class="bg-gray-100 p-3 w-full border rounded-xl hover:bg-[#F3E99F] " type="submit" name="addUser" value="ADD">   
+                            ';
+                        };
                     
-                    <input class="bg-gray-100 p-3 w-full border rounded-xl hover:bg-[#F3E99F] " type="submit" name="addUser" value="ADD">
+                    ?>
+                    
                     <!-- <a class="hover:bg-[#F3E99F]" href="./register.php"></a> -->
                 </form>
             </div>
@@ -110,8 +162,8 @@
                         <td class="p-3"><?php echo $row['section'] ?></td>
                         <td class="p-3">
                             <div class="flex justify-around">
-                                <button>Edit</button>
-                                <button>Delete</button> 
+                                <button><a class="hover:underline" href="users.php?student_id=<?php echo $row['student_id']; ?>&name=<?php echo $row['name'] ?>&curriculum=<?php echo $row['curriculum'] ?>&year=<?php echo $row['year'] ?>&section=<?php echo $row['section'] ?>&password=<?php echo $row['password'] ?>">Edit</a></button>
+                                <button class="hover:underline" onclick="userDelete(`<?php echo $row['student_id'] ?>`)">Delete</button> 
                             </div>
                             
                         </td>
@@ -127,7 +179,17 @@
         </div>
     </div>
     
-    
+    <script>
+        function userDelete(id){
+            console.log(id)
+            var confirmDelete = confirm("Are you sure you want to delete this record?");
+            if (confirmDelete) {
+                window.location.href = `./functions/deleteUser.php?student_id=${id}`;
+            } else {
+                window.location.href = "./users.php";
+            };
+        }
+    </script>
     
 </body>
 </html>

@@ -43,33 +43,76 @@
         <div class="p-10 flex justify-center items-center w-full m-5 ">
             <div class="bg-[#FF6D60]/70 flex flex-col p-5 border w-1/2 rounded-xl">
                 <form action="./functions/actions.php" method="POST" class="flex flex-col justify-center items-center gap-5">
-                    
-                    <h2 class="font-bold">Questions</h2>
-                    <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="question" placeholder="Question">
+                    <?php
+                        if(isset($_GET['id'])){
+                            $id = $_GET['id'];
+                            $question = $_GET['question'];
+                            $a_answer = $_GET['a_answer'];
+                            $b_answer = $_GET['b_answer'];
+                            $c_answer = $_GET['c_answer'];
+                            $d_answer = $_GET['d_answer'];
+                            $correct_answer = $_GET['correct_answer'];
+                            $curriculum = $_GET['curriculum'];
+                            $type = $_GET['type'];
+                            echo '
+                                <h2 class="font-bold">Questions</h2>
+                                <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="question" placeholder="Question" value="'.$question.'">
+            
+                                <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="a_answer" placeholder="A Answer" value="'.$a_answer.'">
+                                <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="b_answer" placeholder="B Answer" value="'.$b_answer.'">
+                                <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="c_answer" placeholder="C Answer" value="'.$c_answer.'"> 
+                                <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="d_answer" placeholder="D Answer" value="'.$d_answer.'">
+                                <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="correct_answer" placeholder="Correct Answer" value="'.$correct_answer.'">
+                                <select required class="p-3 bg-white w-full border rounded-xl border-solid" name="curriculum">
+                                    <option '.(($curriculum == "BS Information Technology")? 'selected':'').' value="BS Information Technology">BS Information Technology</option>
+                                    <option '.(($curriculum == "BS Information Systems")? 'selected':'').' value="BS Information Systems">BS Information Systems</option>
+                                </select>
+                                <select required class="p-3 bg-white w-full border rounded-xl border-solid" name="type">
+                                    <option '.(($type == "Easy")? 'selected':'').' value="Easy">Easy</option>
+                                    <option '.(($type == "Medium")? 'selected':'').' value="Medium">Medium</option>
+                                    <option '.(($type == "Hard")? 'selected':'').' value="Hard">Hard</option>
+                                </select>
+                                <input hidden class="p-3 w-full border rounded-xl border-solid" type="text" name="id" placeholder="id" value="'.$id.'">
+                                
+                                <div class="flex gap-3 w-full">
+                                    <input class="bg-gray-100 p-3 flex-grow border rounded-xl hover:bg-[#F3E99F] " type="submit" name="updateQuestion" value="UPDATE"> 
+                                    <input class="bg-gray-100 p-3 flex-grow border rounded-xl hover:bg-[#F3E99F] " type="submit" name="cancelQuestion" value="CANCEL">
+                                
+                                </div>
+                            ';
 
-                    <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="a_answer" placeholder="A Answer">
-                    <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="b_answer" placeholder="B Answer">
-                    <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="c_answer" placeholder="C Answer"> 
-                    <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="d_answer" placeholder="D Answer">
-                    <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="correct_answer" placeholder="Correct Answer">
-                    <select required class="p-3 bg-white w-full border rounded-xl border-solid" name="curriculum">
-                        <option selected hidden value="">Curriculum</option>
-                        <option value="BS Information Technology">BS Information Technology</option>
-                        <option value="BS Information Systems">BS Information Systems</option>
-                    </select>
-                    <select required class="p-3 bg-white w-full border rounded-xl border-solid" name="type">
-                        <option selected hidden value="">Type</option>
-                        <option value="Easy">Easy</option>
-                        <option value="Medium">Medium</option>
-                        <option value="Hard">Hard</option>
-                    </select>
+                        }else{
+                            echo '
+                                <h2 class="font-bold">Questions</h2>
+                                <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="question" placeholder="Question">
+            
+                                <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="a_answer" placeholder="A Answer">
+                                <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="b_answer" placeholder="B Answer">
+                                <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="c_answer" placeholder="C Answer"> 
+                                <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="d_answer" placeholder="D Answer">
+                                <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="correct_answer" placeholder="Correct Answer">
+                                <select required class="p-3 bg-white w-full border rounded-xl border-solid" name="curriculum">
+                                    <option selected hidden value="">Curriculum</option>
+                                    <option value="BS Information Technology">BS Information Technology</option>
+                                    <option value="BS Information Systems">BS Information Systems</option>
+                                </select>
+                                <select required class="p-3 bg-white w-full border rounded-xl border-solid" name="type">
+                                    <option selected hidden value="">Type</option>
+                                    <option value="Easy">Easy</option>
+                                    <option value="Medium">Medium</option>
+                                    <option value="Hard">Hard</option>
+                                </select>
+                                
+                                <input class="bg-gray-100 p-3 w-full border rounded-xl hover:bg-[#F3E99F] " type="submit" name="addQuestion" value="ADD">
+                            ';
+                        };
+                    ?>
                     
-                    <input class="bg-gray-100 p-3 w-full border rounded-xl hover:bg-[#F3E99F] " type="submit" name="addQuestion" value="ADD">
                 </form>
             </div>
         </div>
 
-        <div class="p-5 py-10 flex justify-center items-start h-full w-full overflow-scroll">
+        <div class="p-5 py-10 flex justify-center items-start w-full">
             <div>
                 <table class="table-fixed border border-1 border-solid w-full">
                 
@@ -103,8 +146,9 @@
                     <td><?php echo $row['type'] ?></td>
                     <td>
                         <div class="flex justify-around">
-                            <button>Edit</button>
-                            <button>Delete</button> 
+                            <button><a class="hover:underline" href="./questions.php?id=<?php echo $row['id']; ?>&question=<?php echo $row['question'] ?>&a_answer=<?php echo $row['a_answer'] ?>&b_answer=<?php echo $row['b_answer'] ?>&c_answer=<?php echo $row['c_answer'] ?>&d_answer=<?php echo $row['d_answer'] ?>&correct_answer=<?php echo $row['correct_answer'] ?>&curriculum=<?php echo $row['curriculum'] ?>&type=<?php echo $row['type'] ?>">Edit</a></button>
+
+                            <button class="hover:underline" onclick="questionDelete(`<?php echo $row['id'] ?>`)">Delete</button>
                         </div>
                     </td>
                 </tr>
@@ -118,7 +162,17 @@
             
         </div>
     </div>
-    
+    <script>
+        function questionDelete(id){
+            console.log(id)
+            var confirmDelete = confirm("Are you sure you want to delete this record?");
+            if (confirmDelete) {
+                window.location.href = `./functions/deleteQuestion.php?id=${id}`;
+            } else {
+                // window.location.href = "./questions.php";
+            };
+        }
+    </script>
     
     
 </body>

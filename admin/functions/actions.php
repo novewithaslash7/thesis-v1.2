@@ -33,9 +33,33 @@
         
         $conn->close();
     };
+    // updateUser
+    if(isset($_POST['cancelUser'])){
+        header('location:../users.php');
+    };
+    if(isset($_POST['updateUser'])){
+        $name = $_POST['name'];
+        $curriculum = $_POST['curriculum'];
+        $year = $_POST['year'];
+        $section = $_POST['section'];
+        $student_id = $_POST['student_id'];
+        $password = $_POST['password'];
 
-    // delete user
+        $UPDATE = "UPDATE users SET name = ?, curriculum = ?, year = ?, section = ?, student_id = ?, password = ? WHERE student_id = ? ";
+		$stmt = $conn->prepare($UPDATE);
+		$stmt->bind_param('sssssss', $name, $curriculum, $year, $section, $student_id, $password, $student_id);
 
+		if($stmt->execute()){
+			// echo 'Record Updated';
+			header('location:../users.php');
+		}else{
+			echo 'Record update error';
+		};
+        
+        $conn->close();
+    };
+
+    
 
     
     // add question
@@ -67,7 +91,34 @@
         $conn->close();
     };
     // update question
+    if(isset($_POST['cancelQuestion'])){
+        header('location:../questions.php');
+    };
+    if(isset($_POST['updateQuestion'])){
+        $id = $_POST['id'];
+        $question = $_POST['question'];
+        $a_answer = $_POST['a_answer'];
+        $b_answer = $_POST['b_answer'];
+        $c_answer = $_POST['c_answer'];
+        $d_answer = $_POST['d_answer'];
+        $correct_answer = $_POST['correct_answer'];
+        $curriculum = $_POST['curriculum'];
+        $type = $_POST['type'];
 
+        $UPDATE = "UPDATE questions SET question=?, a_answer=?, b_answer=?, c_answer=?, d_answer=?, correct_answer=?, curriculum=?, type=? WHERE id = ? ";
+		$stmt = $conn->prepare($UPDATE);
+		$stmt->bind_param("sssssssss", $question, $a_answer, $b_answer, $c_answer, $d_answer, $correct_answer, $curriculum, $type, $id);
+
+		if ($stmt->execute()) {
+            header("location: ../questions.php");
+            exit();
+        } else {
+            // echo "Error: " . $stmt->error;
+            header("location: ../questions.php?msg");
+        }
+        
+        $conn->close();
+    };
     // delete question
 
 
