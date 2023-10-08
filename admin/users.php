@@ -186,7 +186,7 @@
             if (confirmDelete) {
                 window.location.href = `./functions/deleteUser.php?student_id=${id}`;
             } else {
-                window.location.href = "./users.php";
+                // window.location.href = "./users.php";
             };
         }
     </script>
