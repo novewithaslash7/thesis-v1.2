@@ -47,30 +47,22 @@
                         if(isset($_GET['id'])){
                             $id = $_GET['id'];
                             $question = $_GET['question'];
-                            $a_answer = $_GET['a_answer'];
-                            $b_answer = $_GET['b_answer'];
-                            $c_answer = $_GET['c_answer'];
-                            $d_answer = $_GET['d_answer'];
+                            $incorrect_answer_1 = $_GET['incorrect_answer_1'];
+                            $incorrect_answer_2 = $_GET['incorrect_answer_2'];
+                            $incorrect_answer_3 = $_GET['incorrect_answer_3'];
                             $correct_answer = $_GET['correct_answer'];
                             $curriculum = $_GET['curriculum'];
-                            $type = $_GET['type'];
                             echo '
                                 <h2 class="font-bold">Questions</h2>
                                 <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="question" placeholder="Question" value="'.$question.'">
             
-                                <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="a_answer" placeholder="A Answer" value="'.$a_answer.'">
-                                <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="b_answer" placeholder="B Answer" value="'.$b_answer.'">
-                                <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="c_answer" placeholder="C Answer" value="'.$c_answer.'"> 
-                                <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="d_answer" placeholder="D Answer" value="'.$d_answer.'">
+                                <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="incorrect_answer_1" placeholder="1 Answer" value="'.$incorrect_answer_1.'">
+                                <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="incorrect_answer_2" placeholder="2 Answer" value="'.$incorrect_answer_2.'">
+                                <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="incorrect_answer_3" placeholder="3 Answer" value="'.$incorrect_answer_3.'"> 
                                 <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="correct_answer" placeholder="Correct Answer" value="'.$correct_answer.'">
                                 <select required class="p-3 bg-white w-full border rounded-xl border-solid" name="curriculum">
                                     <option '.(($curriculum == "BS Information Technology")? 'selected':'').' value="BS Information Technology">BS Information Technology</option>
                                     <option '.(($curriculum == "BS Information Systems")? 'selected':'').' value="BS Information Systems">BS Information Systems</option>
-                                </select>
-                                <select required class="p-3 bg-white w-full border rounded-xl border-solid" name="type">
-                                    <option '.(($type == "Easy")? 'selected':'').' value="Easy">Easy</option>
-                                    <option '.(($type == "Medium")? 'selected':'').' value="Medium">Medium</option>
-                                    <option '.(($type == "Hard")? 'selected':'').' value="Hard">Hard</option>
                                 </select>
                                 <input hidden class="p-3 w-full border rounded-xl border-solid" type="text" name="id" placeholder="id" value="'.$id.'">
                                 
@@ -86,21 +78,14 @@
                                 <h2 class="font-bold">Questions</h2>
                                 <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="question" placeholder="Question">
             
-                                <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="a_answer" placeholder="A Answer">
-                                <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="b_answer" placeholder="B Answer">
-                                <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="c_answer" placeholder="C Answer"> 
-                                <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="d_answer" placeholder="D Answer">
+                                <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="incorrect_answer_1" placeholder="1 Answer">
+                                <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="incorrect_answer_2" placeholder="2 Answer">
+                                <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="incorrect_answer_3" placeholder="3 Answer"> 
                                 <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="correct_answer" placeholder="Correct Answer">
                                 <select required class="p-3 bg-white w-full border rounded-xl border-solid" name="curriculum">
                                     <option selected hidden value="">Curriculum</option>
                                     <option value="BS Information Technology">BS Information Technology</option>
                                     <option value="BS Information Systems">BS Information Systems</option>
-                                </select>
-                                <select required class="p-3 bg-white w-full border rounded-xl border-solid" name="type">
-                                    <option selected hidden value="">Type</option>
-                                    <option value="Easy">Easy</option>
-                                    <option value="Medium">Medium</option>
-                                    <option value="Hard">Hard</option>
                                 </select>
                                 
                                 <input class="bg-gray-100 p-3 w-full border rounded-xl hover:bg-[#F3E99F] " type="submit" name="addQuestion" value="ADD">
@@ -118,13 +103,11 @@
                 
                 <tr>
                     <th>Question</th>
-                    <th>A Answer</th>
-                    <th>B Answer</th>
-                    <th>C Answer</th>
-                    <th>D Answer</th>
+                    <th>1 Answer</th>
+                    <th>2 Answer</th>
+                    <th>3 Answer</th>
                     <th>Correct Answer</th>
                     <th>Curriculum</th>
-                    <th>Type</th>
                     <th>Actions</th>
                 </tr>
                 <?php 
@@ -137,16 +120,14 @@
                 ?>
                 <tr>
                     <td><?php echo $row['question'] ?></td>
-                    <td><?php echo $row['a_answer'] ?></td>
-                    <td><?php echo $row['b_answer'] ?></td>
-                    <td><?php echo $row['c_answer'] ?></td>
-                    <td><?php echo $row['d_answer'] ?></td>
+                    <td><?php echo $row['incorrect_answer_1'] ?></td>
+                    <td><?php echo $row['incorrect_answer_2'] ?></td>
+                    <td><?php echo $row['incorrect_answer_3'] ?></td>
                     <td><?php echo $row['correct_answer'] ?></td>
                     <td><?php echo $row['curriculum'] ?></td>
-                    <td><?php echo $row['type'] ?></td>
                     <td>
                         <div class="flex justify-around">
-                            <button><a class="hover:underline" href="./questions.php?id=<?php echo $row['id']; ?>&question=<?php echo $row['question'] ?>&a_answer=<?php echo $row['a_answer'] ?>&b_answer=<?php echo $row['b_answer'] ?>&c_answer=<?php echo $row['c_answer'] ?>&d_answer=<?php echo $row['d_answer'] ?>&correct_answer=<?php echo $row['correct_answer'] ?>&curriculum=<?php echo $row['curriculum'] ?>&type=<?php echo $row['type'] ?>">Edit</a></button>
+                            <button><a class="hover:underline" href="./questions.php?id=<?php echo $row['id']; ?>&question=<?php echo $row['question'] ?>&incorrect_answer_1=<?php echo $row['incorrect_answer_1'] ?>&incorrect_answer_2=<?php echo $row['incorrect_answer_2'] ?>&incorrect_answer_3=<?php echo $row['incorrect_answer_3'] ?>&correct_answer=<?php echo $row['correct_answer'] ?>&curriculum=<?php echo $row['curriculum'] ?>">Edit</a></button>
 
                             <button class="hover:underline" onclick="questionDelete(`<?php echo $row['id'] ?>`)">Delete</button>
                         </div>

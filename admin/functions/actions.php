@@ -65,18 +65,17 @@
     // add question
     if(isset($_POST['addQuestion'])){
         $question = $_POST['question'];
-        $a_answer = $_POST['a_answer'];
-        $b_answer = $_POST['b_answer'];
-        $c_answer = $_POST['c_answer'];
-        $d_answer = $_POST['d_answer'];
+        $question = $_POST['question'];
+        $incorrect_answer_1 = $_POST['incorrect_answer_1'];
+        $incorrect_answer_2 = $_POST['incorrect_answer_2'];
+        $incorrect_answer_3 = $_POST['incorrect_answer_3'];
         $correct_answer = $_POST['correct_answer'];
         $curriculum = $_POST['curriculum'];
-        $type = $_POST['type'];
 
-        $INSERT = "INSERT INTO questions (question, a_answer, b_answer, c_answer, d_answer, correct_answer, curriculum, type) VALUES (?,?,?,?,?,?,?,?)";
+        $INSERT = "INSERT INTO questions (question, incorrect_answer_1, incorrect_answer_2, incorrect_answer_3, correct_answer, curriculum) VALUES (?,?,?,?,?,?)";
         
         $stmt = $conn->prepare($INSERT);
-        $stmt->bind_param("ssssssss", $question, $a_answer, $b_answer, $c_answer, $d_answer, $correct_answer, $curriculum, $type);
+        $stmt->bind_param("ssssss", $question, $incorrect_answer_1, $incorrect_answer_2, $incorrect_answer_3, $correct_answer, $curriculum);
 
         if ($stmt->execute()) {
             header("location: ../questions.php");
@@ -97,17 +96,17 @@
     if(isset($_POST['updateQuestion'])){
         $id = $_POST['id'];
         $question = $_POST['question'];
-        $a_answer = $_POST['a_answer'];
-        $b_answer = $_POST['b_answer'];
-        $c_answer = $_POST['c_answer'];
-        $d_answer = $_POST['d_answer'];
+        $incorrect_answer_1 = $_POST['incorrect_answer_1'];
+        $incorrect_answer_2 = $_POST['incorrect_answer_2'];
+        $incorrect_answer_3 = $_POST['incorrect_answer_3'];
         $correct_answer = $_POST['correct_answer'];
         $curriculum = $_POST['curriculum'];
-        $type = $_POST['type'];
 
-        $UPDATE = "UPDATE questions SET question=?, a_answer=?, b_answer=?, c_answer=?, d_answer=?, correct_answer=?, curriculum=?, type=? WHERE id = ? ";
+        // echo `$id, $question, $incorrect_answer_1, $incorrect_answer_2, $incorrect_answer_3, $correct_answer, $curriculum `;
+
+        $UPDATE = "UPDATE questions SET question=?, incorrect_answer_1=?, incorrect_answer_2=?, incorrect_answer_3=?, correct_answer=?, curriculum=?  WHERE id = ? ";
 		$stmt = $conn->prepare($UPDATE);
-		$stmt->bind_param("sssssssss", $question, $a_answer, $b_answer, $c_answer, $d_answer, $correct_answer, $curriculum, $type, $id);
+		$stmt->bind_param("sssssss", $question, $incorrect_answer_1, $incorrect_answer_2, $incorrect_answer_3, $correct_answer, $curriculum, $id);
 
 		if ($stmt->execute()) {
             header("location: ../questions.php");
