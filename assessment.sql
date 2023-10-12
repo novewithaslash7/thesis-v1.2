@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Sep 23, 2023 at 02:47 PM
+-- Generation Time: Oct 12, 2023 at 03:42 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -50,14 +50,22 @@ INSERT INTO `admin_account` (`id`, `username`, `password`) VALUES
 CREATE TABLE `questions` (
   `id` int(11) NOT NULL,
   `question` varchar(255) NOT NULL,
-  `a_answer` varchar(255) NOT NULL,
-  `b_answer` varchar(255) NOT NULL,
-  `c_answer` varchar(255) NOT NULL,
-  `d_answer` varchar(255) NOT NULL,
+  `incorrect_answer_1` varchar(255) NOT NULL,
+  `incorrect_answer_2` varchar(255) NOT NULL,
+  `incorrect_answer_3` varchar(255) NOT NULL,
   `correct_answer` varchar(255) NOT NULL,
-  `curriculum` varchar(255) NOT NULL,
-  `type` varchar(255) NOT NULL
+  `curriculum` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `questions`
+--
+
+INSERT INTO `questions` (`id`, `question`, `incorrect_answer_1`, `incorrect_answer_2`, `incorrect_answer_3`, `correct_answer`, `curriculum`) VALUES
+(2, '1   1?', '1', '4', '3', '2', 'BS Information Systems'),
+(3, '1 +1?', '1', '4', '3', '2', 'BS Information Technology'),
+(4, '2+2?', '3', '2', '8', '4', 'BS Information Technology'),
+(5, '2 2?', '2', '8', '9', '4', 'BS Information Systems');
 
 -- --------------------------------------------------------
 
@@ -73,8 +81,15 @@ CREATE TABLE `scores` (
   `year` varchar(255) NOT NULL,
   `section` varchar(255) NOT NULL,
   `score` varchar(255) NOT NULL,
-  `clasification` varchar(255) NOT NULL
+  `classification` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `scores`
+--
+
+INSERT INTO `scores` (`scores_id`, `student_id`, `name`, `curriculum`, `year`, `section`, `score`, `classification`) VALUES
+(4, '2019-0154-PC', 'Test User updated', 'BS Information Technology', '4', 'A', '2', 'pass');
 
 -- --------------------------------------------------------
 
@@ -96,7 +111,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`student_id`, `name`, `curriculum`, `year`, `section`, `password`) VALUES
-('2019-0154-PC', 'Test User', 'BS Information Technology', '4', 'A', '123');
+('2019-0154-PC', 'Test User updated', 'BS Information Technology', '4', 'A', '123');
 
 --
 -- Indexes for dumped tables
@@ -140,13 +155,13 @@ ALTER TABLE `admin_account`
 -- AUTO_INCREMENT for table `questions`
 --
 ALTER TABLE `questions`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `scores`
 --
 ALTER TABLE `scores`
-  MODIFY `scores_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `scores_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
