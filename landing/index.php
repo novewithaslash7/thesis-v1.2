@@ -31,7 +31,7 @@
         <div class="flex gap-3 ml-10">
            
             <img class="h-[70px]" src="./wvsu.png"> 
-            <img class="h-[80px]" src="./logo.png">
+            <img class="h-[70px]" src="./ICT.png">
             
         </div>
 
@@ -48,7 +48,7 @@
     <div class="flex h-screen bg-[#BBF1FA] gap-3 p-3">
         <!-- image -->
         <div class="w-1/2 p-20 flex justify-center">
-            <img src="https://picsum.photos/300/200" alt="">
+            <img src="SystemLogo.png" alt="">
         </div>
         <!-- title -->
         <div class="flex w-1/2 flex-col justify-center items-end p-10">

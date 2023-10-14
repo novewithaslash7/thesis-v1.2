@@ -30,7 +30,7 @@
         <div class="flex items-center gap-3 ml-10">
             
             <img class="h-[70px]" src="./wvsu.png"> 
-            <img class="h-[80px]" src="./logo.png">
+            <img class="h-[70px]" src="./ICT.png">
 
         </div>
             
@@ -60,7 +60,7 @@
 
         <div class="flex w-1/2 flex-col justify-center items-end p-10">
             <h1 class="text-7xl text-end font-bold">BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY</h1>
-            <p class="text-end text-xl mt-5">An ICT Assessment Test is a comprehensive evaluation of an individual's proficiency in information technology, covering topics such as hardware, software, networking, and cybersecurity. It is commonly used in education and employment settings to assess digital competence and readiness.</p>
+            <p class="text-end text-xl mt-5">The BS Information Technology aims to produce quality graduates who study, analyze, design, develop, implement, and evaluate ICT solutions. The program focuses on the use of ICT for a variety of applications, such as in business, governance, education, personal and entertainment. Professional subjects including logic design, microcomputer technology, computer system organization, networking technologies, and system resource management.</p>
         </div>  
     </div>
     <!-- right image -->
@@ -70,7 +70,7 @@
         <div class="flex w-1/2 flex-col justify-center items-end p-10">
             <!-- use text-start to start the paragraph in left and end to right -->
             <h1 class="text-7xl text-start font-bold">BACHELOR OF SCIENCE IN INFORMATION SYSTEMS</h1>
-            <p class="text-start text-xl mt-5">An ICT Assessment Test is a comprehensive evaluation of an individual's proficiency in information technology, covering topics such as hardware, software, networking, and cybersecurity. It is commonly used in education and employment settings to assess digital competence and readiness.</p>
+            <p class="text-start text-xl mt-5">The BS Information Systems program aims to equip students with the knowledge, skills and attitude in the design and implementation of solutions that integrate information technology with business processes. This program prepares students to be IT professionals who could harness ICT as a strategic resource to meet business and organizational objectives.  Graduates of BSIS are expected to have acquired but not limited to the following competencies; (a)personal skills, (b)interpersonal skills, (c)technical understanding on information abstraction, representation, and organization; computing architecture and delivery system concepts of information system distribution; information management in system development; and computing tools and knowledge applications.</p>
         </div>
         <!-- image -->
         <div class="w-1/2 p-20 flex justify-center">

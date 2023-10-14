@@ -25,10 +25,12 @@
     </style>
 </head>
 <body>
-    <div class="w-full flex flex-row justify-between p-5 bg-gray-200">
-        <div class="ml-10">
-            LOGO
+    <div class="w-full flex flex-row items-center justify-between p-5 bg-gray-200">
+        <div class="ml-10 flex">
+            <img class="h-[70px]" src="./wvsu.png"> 
+            <img class="h-[70px]" src="./ICT.png">
         </div>
+
         <div class="mr-10">
             <li class="flex flex-row gap-10 items-center">
                 <ul><a class="hover:underline font-bold" href="./users.php">Users</a></ul>
