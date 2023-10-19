@@ -117,6 +117,7 @@
                 <table class="table-fixed border border-1 border-solid w-full">
                 
                 <tr>
+                    <th>No.</th>
                     <th>Question</th>
                     <th>1 Answer</th>
                     <th>2 Answer</th>
@@ -131,10 +132,13 @@
                     
                     $query = "SELECT * FROM questions";
                     $result = mysqli_query($conn, $query);
+                    $count = 0;
                     if(mysqli_num_rows($result) > 0){
                         while($row = mysqli_fetch_assoc($result)){
+                            $count++;
                 ?>
                 <tr>
+                    <td><?php echo $count ?></td>
                     <td><?php echo $row['question'] ?></td>
                     <td><?php echo $row['incorrect_answer_1'] ?></td>
                     <td><?php echo $row['incorrect_answer_2'] ?></td>
