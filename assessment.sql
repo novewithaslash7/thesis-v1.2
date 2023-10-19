@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Oct 12, 2023 at 03:42 PM
+-- Generation Time: Oct 19, 2023 at 02:46 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -54,18 +54,19 @@ CREATE TABLE `questions` (
   `incorrect_answer_2` varchar(255) NOT NULL,
   `incorrect_answer_3` varchar(255) NOT NULL,
   `correct_answer` varchar(255) NOT NULL,
-  `curriculum` varchar(255) NOT NULL
+  `curriculum` varchar(255) NOT NULL,
+  `year` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `questions`
 --
 
-INSERT INTO `questions` (`id`, `question`, `incorrect_answer_1`, `incorrect_answer_2`, `incorrect_answer_3`, `correct_answer`, `curriculum`) VALUES
-(2, '1   1?', '1', '4', '3', '2', 'BS Information Systems'),
-(3, '1 +1?', '1', '4', '3', '2', 'BS Information Technology'),
-(4, '2+2?', '3', '2', '8', '4', 'BS Information Technology'),
-(5, '2 2?', '2', '8', '9', '4', 'BS Information Systems');
+INSERT INTO `questions` (`id`, `question`, `incorrect_answer_1`, `incorrect_answer_2`, `incorrect_answer_3`, `correct_answer`, `curriculum`, `year`) VALUES
+(2, '1   1?', '1', '4', '3', '2', 'BS Information Systems', '2'),
+(3, '1  1?', '1', '4', '3', '2', 'BS Information Technology', '2'),
+(4, '2 2?', '3', '2', '8', '4', 'BS Information Technology', '4'),
+(5, '2 2?', '2', '8', '9', '4', 'BS Information Systems', '4');
 
 -- --------------------------------------------------------
 
