@@ -71,11 +71,12 @@
         $incorrect_answer_3 = $_POST['incorrect_answer_3'];
         $correct_answer = $_POST['correct_answer'];
         $curriculum = $_POST['curriculum'];
+        $year = $_POST['year'];
 
-        $INSERT = "INSERT INTO questions (question, incorrect_answer_1, incorrect_answer_2, incorrect_answer_3, correct_answer, curriculum) VALUES (?,?,?,?,?,?)";
+        $INSERT = "INSERT INTO questions (question, incorrect_answer_1, incorrect_answer_2, incorrect_answer_3, correct_answer, curriculum, year) VALUES (?,?,?,?,?,?,?)";
         
         $stmt = $conn->prepare($INSERT);
-        $stmt->bind_param("ssssss", $question, $incorrect_answer_1, $incorrect_answer_2, $incorrect_answer_3, $correct_answer, $curriculum);
+        $stmt->bind_param("sssssss", $question, $incorrect_answer_1, $incorrect_answer_2, $incorrect_answer_3, $correct_answer, $curriculum, $year);
 
         if ($stmt->execute()) {
             header("location: ../questions.php");
@@ -101,12 +102,13 @@
         $incorrect_answer_3 = $_POST['incorrect_answer_3'];
         $correct_answer = $_POST['correct_answer'];
         $curriculum = $_POST['curriculum'];
+        $year = $_POST['year'];
 
         // echo `$id, $question, $incorrect_answer_1, $incorrect_answer_2, $incorrect_answer_3, $correct_answer, $curriculum `;
 
-        $UPDATE = "UPDATE questions SET question=?, incorrect_answer_1=?, incorrect_answer_2=?, incorrect_answer_3=?, correct_answer=?, curriculum=?  WHERE id = ? ";
+        $UPDATE = "UPDATE questions SET question=?, incorrect_answer_1=?, incorrect_answer_2=?, incorrect_answer_3=?, correct_answer=?, curriculum=?, year=?  WHERE id = ? ";
 		$stmt = $conn->prepare($UPDATE);
-		$stmt->bind_param("sssssss", $question, $incorrect_answer_1, $incorrect_answer_2, $incorrect_answer_3, $correct_answer, $curriculum, $id);
+		$stmt->bind_param("ssssssss", $question, $incorrect_answer_1, $incorrect_answer_2, $incorrect_answer_3, $correct_answer, $curriculum, $year, $id);
 
 		if ($stmt->execute()) {
             header("location: ../questions.php");

@@ -53,6 +53,7 @@
                             $incorrect_answer_3 = $_GET['incorrect_answer_3'];
                             $correct_answer = $_GET['correct_answer'];
                             $curriculum = $_GET['curriculum'];
+                            $year = $_GET['year'];
                             echo '
                                 <h2 class="font-bold">Questions</h2>
                                 <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="question" placeholder="Question" value="'.$question.'">
@@ -65,6 +66,12 @@
                                     <option '.(($curriculum == "BS Information Technology")? 'selected':'').' value="BS Information Technology">BS Information Technology</option>
                                     <option '.(($curriculum == "BS Information Systems")? 'selected':'').' value="BS Information Systems">BS Information Systems</option>
                                 </select>
+                                <select class="p-3 bg-white w-full border rounded-xl border-solid" name="year">
+                                        <option '.(($year == 1)? 'selected':'').' value="1">1</option>
+                                        <option '.(($year == 2)? 'selected':'').' value="2">2</option>
+                                        <option '.(($year == 3)? 'selected':'').' value="3">3</option>
+                                        <option '.(($year == 4)? 'selected':'').' value="4">4</option>
+                                    </select>
                                 <input hidden class="p-3 w-full border rounded-xl border-solid" type="text" name="id" placeholder="id" value="'.$id.'">
                                 
                                 <div class="flex gap-3 w-full">
@@ -88,6 +95,13 @@
                                     <option value="BS Information Technology">BS Information Technology</option>
                                     <option value="BS Information Systems">BS Information Systems</option>
                                 </select>
+                                <select class="p-3 bg-white w-full border rounded-xl border-solid" name="year">
+                                        <option selected hidden value="">Year</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
                                 
                                 <input class="bg-gray-100 p-3 w-full border rounded-xl hover:bg-[#F3E99F] " type="submit" name="addQuestion" value="ADD">
                             ';
@@ -109,6 +123,7 @@
                     <th>3 Answer</th>
                     <th>Correct Answer</th>
                     <th>Curriculum</th>
+                    <th>Year</th>
                     <th>Actions</th>
                 </tr>
                 <?php 
@@ -126,9 +141,10 @@
                     <td><?php echo $row['incorrect_answer_3'] ?></td>
                     <td><?php echo $row['correct_answer'] ?></td>
                     <td><?php echo $row['curriculum'] ?></td>
+                    <td><?php echo $row['year'] ?></td>
                     <td>
                         <div class="flex justify-around">
-                            <button><a class="hover:underline" href="./questions.php?id=<?php echo $row['id']; ?>&question=<?php echo $row['question'] ?>&incorrect_answer_1=<?php echo $row['incorrect_answer_1'] ?>&incorrect_answer_2=<?php echo $row['incorrect_answer_2'] ?>&incorrect_answer_3=<?php echo $row['incorrect_answer_3'] ?>&correct_answer=<?php echo $row['correct_answer'] ?>&curriculum=<?php echo $row['curriculum'] ?>">Edit</a></button>
+                            <button><a class="hover:underline" href="./questions.php?id=<?php echo $row['id']; ?>&question=<?php echo $row['question'] ?>&incorrect_answer_1=<?php echo $row['incorrect_answer_1'] ?>&incorrect_answer_2=<?php echo $row['incorrect_answer_2'] ?>&incorrect_answer_3=<?php echo $row['incorrect_answer_3'] ?>&correct_answer=<?php echo $row['correct_answer'] ?>&curriculum=<?php echo $row['curriculum'] ?>&year=<?php echo $row['year'] ?>">Edit</a></button>
 
                             <button class="hover:underline" onclick="questionDelete(`<?php echo $row['id'] ?>`)">Delete</button>
                         </div>

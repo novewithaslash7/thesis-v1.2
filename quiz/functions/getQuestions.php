@@ -3,8 +3,9 @@
 
     if(isset($_GET['curriculum'])){
         $curriculum = $_GET['curriculum'];
+        $year = $_GET['year'];
         // SQL query to fetch data from the table (you can modify this query to fit your database)
-        $sql = "SELECT * FROM questions WHERE curriculum = '".$curriculum."'";  // Change 'your_table' to your actual table name
+        $sql = "SELECT * FROM questions WHERE curriculum = '".$curriculum."' AND year = '".$year."'";  // Change 'your_table' to your actual table name
         $result = $conn->query($sql);
 
         // Check if there are rows in the result

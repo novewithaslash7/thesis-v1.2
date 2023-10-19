@@ -107,9 +107,9 @@
                 <tr>
                     <td class='p-3'><?php echo $row['student_id'] ?></td>
                     <td class='p-3'><?php echo $row['name'] ?></td>
-                    <td class='p-3'><?php echo $row['curriculum'] ?></td>
                     <td class='p-3'><?php echo $row['year'] ?></td>
                     <td class='p-3'><?php echo $row['section'] ?></td>
+                    <td class='p-3'><?php echo $row['curriculum'] ?></td>
                     <td class='p-3'><?php echo $row['score'] ?></td>
                     <td class='p-3'><?php echo $row['classification'] ?></td>
                 </tr>

@@ -90,7 +90,7 @@
 
         let questions = [];
         console.log(curriculum)
-        fetch(`./functions/getQuestions.php?curriculum=${curriculum}`).then((res) => {
+        fetch(`./functions/getQuestions.php?curriculum=${curriculum}&year=${year}`).then((res) => {
             // console.log(res)
             return res.json()
         }).then((loadedQuestions) => {
