@@ -34,15 +34,15 @@
             </div>
           </div>
           <div id="hud-item">
-            <p class="hud-prefix">
+            <!-- <p class="hud-prefix">
               Score
-            </p>
-            <h1 class="hud-main-text" id="score">
+            </p> -->
+            <!-- <h1 class="hud-main-text" id="score">
               0
-            </h1>
+            </h1> -->
           </div>
         </div>
-        <h2 id="question"></h2>
+        <h3 id="question"></h3>
         <div class="choice-container">
           <p class="choice-prefix">A</p>
           <p class="choice-text" data-number="1"></p>
@@ -78,7 +78,7 @@
         const question = document.getElementById('question');
         const choices = Array.from(document.getElementsByClassName('choice-text'));
         const progressText = document.getElementById('progressText');
-        const scoreText = document.getElementById('score');
+        // const scoreText = document.getElementById('score');
         const progressBarFull = document.getElementById('progressBarFull');
         const loader = document.getElementById('loader');
         const game = document.getElementById('game');
@@ -191,7 +191,7 @@
 
         incrementScore = (num) => {
             score += num;
-            scoreText.innerText = score;
+            // scoreText.innerText = score;
         };
     </script>
     

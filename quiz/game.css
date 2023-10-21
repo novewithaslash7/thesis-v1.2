@@ -26,11 +26,11 @@
 }
 
 .correct {
-  background-color: #28a745;
+  background-color: #F3E99F;
 }
 
 .incorrect {
-  background-color: #dc3545;
+  background-color: #F3E99F;
 }
 
 /* HUD */
@@ -38,6 +38,7 @@
 #hud {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .hud-prefix {
