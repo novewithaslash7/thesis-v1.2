@@ -52,7 +52,7 @@
     </div>
 
     <!-- left image -->
-    <div class="flex h-screen bg-[#BBF1FA] gap-3 p-3">
+    <div class="flex bg-[#BBF1FA] gap-3 p-3 border border-0 border-b-2 border-black">
         <!-- image -->
         <div class="w-1/2 p-20 flex justify-center">
             <img src="https://picsum.photos/300/200" alt="">
@@ -63,9 +63,11 @@
             <p class="text-end text-xl mt-5">The BS Information Technology aims to produce quality graduates who study, analyze, design, develop, implement, and evaluate ICT solutions. The program focuses on the use of ICT for a variety of applications, such as in business, governance, education, personal and entertainment. Professional subjects including logic design, microcomputer technology, computer system organization, networking technologies, and system resource management.</p>
         </div>  
     </div>
+    <!-- <hr class="w-full h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"> -->
     <!-- right image -->
-    <div class="flex h-screen bg-[#BBF1FA] gap-3 p-3">
+    <div class="flex bg-[#BBF1FA] gap-3 p-3 pt-10">
      
+
 
         <div class="flex w-1/2 flex-col justify-center items-end p-10">
             <!-- use text-start to start the paragraph in left and end to right -->

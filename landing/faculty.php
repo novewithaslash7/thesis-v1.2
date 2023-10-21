@@ -262,7 +262,7 @@
     <div class="flex h-screen bg-[#BBF1FA] gap-3 p-3">
         <!-- image -->
         <div class="w-1/2 p-20 flex justify-center">
-            <img src="1M.JPG" alt="">
+            <img src="rrr.JPG" alt="">
         </div>
 
         <div class="flex w-1/2 flex-col justify-center items-end p-10">
