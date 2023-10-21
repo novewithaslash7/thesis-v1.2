@@ -4,7 +4,9 @@
 
     // add user
     if(isset($_POST['addUser'])){
-        $name = $_POST['name'];
+        $firstName = $_POST['firstName'];
+        $lastName = $_POST['lastName'];
+        $middleName = $_POST['middleName'];
         $curriculum = $_POST['curriculum'];
         $year = $_POST['year'];
         $section = $_POST['section'];
@@ -12,11 +14,11 @@
         $password = $_POST['password'];
 
         $SELECT = "SELECT student_id FROM users WHERE student_id='".$student_id."'";
-        $INSERT = "INSERT INTO users (student_id, name, curriculum, year, section, password) VALUES (?,?,?,?,?,?)";
+        $INSERT = "INSERT INTO users (student_id, firstName, lastName, middleName, curriculum, year, section, password) VALUES (?,?,?,?,?,?,?,?)";
         $stmt = $conn->query($SELECT);
         if($stmt->num_rows == 0){
             $stmt = $conn->prepare($INSERT);
-            $stmt->bind_param("ssssss", $student_id, $name, $curriculum, $year, $section, $password);
+            $stmt->bind_param("ssssssss",$student_id, $firstName, $middleName, $lastName, $curriculum, $year, $section, $password);
 
             if ($stmt->execute()) {
                 echo "Todo created successfully";
@@ -38,25 +40,35 @@
         header('location:../users.php');
     };
     if(isset($_POST['updateUser'])){
-        $name = $_POST['name'];
+        $firstName = $_POST['firstName'];
+        $lastName = $_POST['lastName'];
+        $middleName = $_POST['middleName'];
         $curriculum = $_POST['curriculum'];
         $year = $_POST['year'];
         $section = $_POST['section'];
         $student_id = $_POST['student_id'];
         $password = $_POST['password'];
 
-        $UPDATE = "UPDATE users SET name = ?, curriculum = ?, year = ?, section = ?, student_id = ?, password = ? WHERE student_id = ? ";
-		$stmt = $conn->prepare($UPDATE);
-		$stmt->bind_param('sssssss', $name, $curriculum, $year, $section, $student_id, $password, $student_id);
+        try {
+            //code...
+            $UPDATE = "UPDATE users SET firstName = ?, lastName = ?, middleName = ?, curriculum = ?, year = ?, section = ?, password = ? WHERE student_id = ? ";
+            $stmt = $conn->prepare($UPDATE);
+            $stmt->bind_param('ssssssss', $firstName, $lastName, $middleName, $curriculum, $year, $section, $password, $student_id);
 
-		if($stmt->execute()){
-			// echo 'Record Updated';
-			header('location:../users.php');
-		}else{
-			echo 'Record update error';
-		};
+            if($stmt->execute()){
+                // echo 'Record Updated';
+                header('location:../users.php');
+            }else{
+                echo 'Record update error';
+            };
+            
+            $conn->close();
+        } catch (\Throwable $th) {
+            //throw $th;
+            echo $th;
+        }
+
         
-        $conn->close();
     };
 
     

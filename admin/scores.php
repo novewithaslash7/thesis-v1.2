@@ -95,7 +95,7 @@
                         $year = $_GET['year'];
                         $curriculum = $_GET['curriculum'];
                         $section = $_GET['section'];
-                        $query = "SELECT * FROM scores WHERE year='$year' AND section='$section' AND curriculum='$curriculum'";
+                        $query = "SELECT * FROM scores WHERE year='$year' AND section='$section' AND curriculum='$curriculum' ORDER BY name ASC";
                     }else{
                         $query = "SELECT * FROM scores";
                     }

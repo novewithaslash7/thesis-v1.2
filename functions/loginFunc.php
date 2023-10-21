@@ -26,7 +26,7 @@
                 $_SESSION['status']=true;
                 $_SESSION['role'] = 'user';
 
-                $_SESSION['name'] = $data['name'];
+                $_SESSION['name'] = $data['lastName']. ', '. $data['firstName']. ' '. $data['middleName'];
                 $_SESSION['curriculum'] = $data['curriculum'];
                 $_SESSION['year'] = $data['year'];
                 $_SESSION['section'] = $data['section'];

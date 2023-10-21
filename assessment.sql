@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Oct 19, 2023 at 02:46 PM
+-- Generation Time: Oct 21, 2023 at 12:32 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -65,7 +65,6 @@ CREATE TABLE `questions` (
 INSERT INTO `questions` (`id`, `question`, `incorrect_answer_1`, `incorrect_answer_2`, `incorrect_answer_3`, `correct_answer`, `curriculum`, `year`) VALUES
 (2, '1   1?', '1', '4', '3', '2', 'BS Information Systems', '2'),
 (3, '1  1?', '1', '4', '3', '2', 'BS Information Technology', '2'),
-(4, '2 2?', '3', '2', '8', '4', 'BS Information Technology', '4'),
 (5, '2 2?', '2', '8', '9', '4', 'BS Information Systems', '4');
 
 -- --------------------------------------------------------
@@ -90,7 +89,7 @@ CREATE TABLE `scores` (
 --
 
 INSERT INTO `scores` (`scores_id`, `student_id`, `name`, `curriculum`, `year`, `section`, `score`, `classification`) VALUES
-(4, '2019-0154-PC', 'Test User updated', 'BS Information Technology', '4', 'A', '2', 'pass');
+(6, '2019-0154-PC', 'update, test user', 'BS Information Systems', '4', 'A', '1', 'pass');
 
 -- --------------------------------------------------------
 
@@ -100,7 +99,9 @@ INSERT INTO `scores` (`scores_id`, `student_id`, `name`, `curriculum`, `year`, `
 
 CREATE TABLE `users` (
   `student_id` varchar(255) NOT NULL,
-  `name` varchar(255) NOT NULL,
+  `firstName` varchar(255) NOT NULL,
+  `middleName` varchar(255) NOT NULL,
+  `lastName` varchar(255) NOT NULL,
   `curriculum` varchar(255) NOT NULL,
   `year` varchar(255) NOT NULL,
   `section` varchar(255) NOT NULL,
@@ -111,8 +112,8 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`student_id`, `name`, `curriculum`, `year`, `section`, `password`) VALUES
-('2019-0154-PC', 'Test User updated', 'BS Information Technology', '4', 'A', '123');
+INSERT INTO `users` (`student_id`, `firstName`, `middleName`, `lastName`, `curriculum`, `year`, `section`, `password`) VALUES
+('2019-0154-PC', 'test', 'user', 'update', 'BS Information Systems', '4', 'A', '123');
 
 --
 -- Indexes for dumped tables
@@ -162,7 +163,7 @@ ALTER TABLE `questions`
 -- AUTO_INCREMENT for table `scores`
 --
 ALTER TABLE `scores`
-  MODIFY `scores_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `scores_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
