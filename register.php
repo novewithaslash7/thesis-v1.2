@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assesment Test</title>
     <!-- copy this in each html codes // important!!! -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="./tailwind/3.3.5.js"></script>
 </head>
 <body>
     <div class="flex justify-center h-screen items-center bg-[url(./bg1.JPG)] bg-cover">

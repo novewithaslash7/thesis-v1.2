@@ -9,7 +9,12 @@
         $section = $_GET['section'];
 
         // add a clasification function
-        $classification = 'pass';
+        if($score >= 45){
+            $classification = 'Pass'; 
+        }else{
+            $classification = 'Fail';
+        }
+        
 
         try {
             //code...

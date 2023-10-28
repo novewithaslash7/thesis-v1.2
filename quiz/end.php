@@ -14,13 +14,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="../tailwind/3.3.5.js"></script>
 </head>
 <body>
 
-    <div class="flex justify-center items-center w-screen h-screen p-10">
-        <img class="h-full" src="https://i.gifer.com/origin/16/162b41786d99b9d7e7b03549c4e19ae2_w200.gif" alt="">
-    </div>
-    
+<div class="h-screen flex w-screen flex-col justify-center p-10">
+            <!-- use text-start to start the paragraph in left and end to right -->
+            <h1 class="text-7xl text-center font-bold">WELL DONE!</h1>
+            <p class="text-center text-xl mt-5">Congratulations on completing your assessment! You have shown great dedication and commitment to your learning, and we are proud of your achievements. Your results demonstrate your hard work and dedication, and we are confident that you will continue to excel in your studies. Keep up the great work!</p>
+</div>
+
 </body>
 </html>

@@ -18,7 +18,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assesment Test</title>
     <!-- copy this in each html codes -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../tailwind/3.3.5.js"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <style>
         table, th, td, tr{
             border: 1px solid black;

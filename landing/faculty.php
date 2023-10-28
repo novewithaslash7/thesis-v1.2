@@ -173,7 +173,7 @@
         <div class="flex w-1/2 flex-col justify-center p-10">
             <!-- use text-start to start the paragraph in left and end to right -->
             <h1 class="text-7xl text-start font-bold">PROF. JEANY ROSE IGNACIO, MPA</h1>
-            <p class="text-start text-xl mt-5">Instructor III</p>
+            <p class="text-start text-xl mt-5">Instructor II I</p>
         </div>
         <!-- image -->
         <div class="w-1/2 p-20 flex justify-center">
