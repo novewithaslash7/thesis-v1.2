@@ -27,7 +27,7 @@
     </style>
 </head>
 <body>
-    <div class="flex gap-3 w-full flex flex-row justify-between items-center p-5 bg-[#EC4646]">
+    <div class="flex gap-3 w-full flex flex-row justify-between items-center p-5 bg-[#FFEBAD]">
         <div class="flex items-center gap-3 ml-10">
             
             <img class="h-[70px]" src="./wvsu.png"> 
@@ -53,10 +53,10 @@
     </div>
 
     <!-- left image -->
-    <div class="flex bg-[#BBF1FA] gap-3 p-3 border border-0 border-b-2 border-black">
+    <div class="flex bg-[#C1D8C3] gap-3 p-3 border border-0 border-b-2 border-black">
         <!-- image -->
         <div class="w-1/2 p-20 flex justify-center">
-            <img src="https://picsum.photos/300/200" alt="">
+            <img src="infotech.jpg." alt="">
         </div>
 
         <div class="flex w-1/2 flex-col justify-center items-end p-10">
@@ -66,7 +66,7 @@
     </div>
     <!-- <hr class="w-full h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"> -->
     <!-- right image -->
-    <div class="flex bg-[#BBF1FA] gap-3 p-3 pt-10">
+    <div class="flex bg-[#C1D8C3] gap-3 p-3 pt-10">
      
 
 
@@ -76,8 +76,8 @@
             <p class="text-start text-xl mt-5">The BS Information Systems program aims to equip students with the knowledge, skills and attitude in the design and implementation of solutions that integrate information technology with business processes. This program prepares students to be IT professionals who could harness ICT as a strategic resource to meet business and organizational objectives.  Graduates of BSIS are expected to have acquired but not limited to the following competencies; (a)personal skills, (b)interpersonal skills, (c)technical understanding on information abstraction, representation, and organization; computing architecture and delivery system concepts of information system distribution; information management in system development; and computing tools and knowledge applications.</p>
         </div>
         <!-- image -->
-        <div class="w-1/2 p-20 flex justify-center">
-            <img src="https://picsum.photos/300/200" alt="">
+        <div class="w-full h-full p-20 flex justify-center">
+            <img src="bsis.jpg" alt="">
         </div>  
     </div>
 

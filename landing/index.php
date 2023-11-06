@@ -28,7 +28,7 @@
 </head>
 <body>
 
-    <div class="flex gap-3 w-full flex flex-row justify-between items-center p-5 bg-[#EC4646]">
+    <div class="flex gap-3 w-full flex flex-row justify-between items-center p-5 bg-[#FFEBAD]">
         <div class="flex gap-3 ml-10">
            
             <img class="h-[70px]" src="./wvsu.png"> 
@@ -46,7 +46,7 @@
         </div>
     </div>
 
-    <div class="flex h-screen bg-[#BBF1FA] gap-3 p-3">
+    <div class="flex h-screen bg-[#C1D8C3] gap-3 p-3">
         <!-- image -->
         <div class="w-1/2 p-20 flex justify-center">
             <img src="SystemLogo.png" alt="">
@@ -57,7 +57,7 @@
             <p class="text-end text-xl mt-5">An ICT Assessment Test is a comprehensive evaluation of an individual's proficiency in information technology, covering topics such as hardware, software, networking, and cybersecurity. It is commonly used in education and employment settings to assess digital competence and readiness.</p>
             
             <a href="../quiz/index.php">
-               <button class="w-25 border-4 border-solid border-black rounded-full hover:bg-[#F3E99F] p-5 mt-10">
+               <button class="w-25 border-4 border-solid border-black rounded-full hover:bg-[#FFEBAD] p-5 mt-10">
                     <p class="text-3xl font-bold">Start Test</p>
                 </button> 
             </a>

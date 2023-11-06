@@ -27,7 +27,7 @@
 </head>
 <body>
 
-<div class="flex gap-3 w-full flex flex-row justify-between items-center p-5 bg-[#EC4646]">
+<div class="flex gap-3 w-full flex flex-row justify-between items-center p-5 bg-[#FFEBAD]">
     <div class="flex items-center gap-3 ml-10">
         
         <img class="h-[70px]" src="./wvsu.png"> 
@@ -51,7 +51,7 @@
         
     </div>
     <!-- left image -->
-    <div class="flex h-screen bg-[#BBF1FA] gap-3 p-3">
+    <div class="flex h-screen bg-[#C1D8C3] gap-3 p-3">
         <!-- image -->
         <div class="w-1/2 p-20 flex justify-center">
             <img src="1k.jpg" alt="">
@@ -63,7 +63,7 @@
         </div>  
     </div>
     <!-- right image -->
-    <div class="flex h-screen bg-[#BBF1FA] gap-3 p-3">
+    <div class="flex h-screen bg-[#C1D8C3] gap-3 p-3">
         
 
         <div class="flex w-1/2 flex-col justify-center p-10">
@@ -77,7 +77,7 @@
         </div>  
     </div>
     <!-- left image -->
-    <div class="flex h-screen bg-[#BBF1FA] gap-3 p-3">
+    <div class="flex h-screen bg-[#C1D8C3] gap-3 p-3">
         <!-- image -->
         <div class="w-1/2 p-20 flex justify-center">
             <img src="1h.jpg" alt="">
@@ -89,7 +89,7 @@
         </div>  
     </div>
     <!-- right image -->
-    <div class="flex h-screen bg-[#BBF1FA] gap-3 p-3">
+    <div class="flex h-screen bg-[#C1D8C3] gap-3 p-3">
         
 
         <div class="flex w-1/2 flex-col justify-center p-10">
@@ -103,7 +103,7 @@
         </div>  
     </div>
     <!-- left image -->
-    <div class="flex h-screen bg-[#BBF1FA] gap-3 p-3">
+    <div class="flex h-screen bg-[#C1D8C3] gap-3 p-3">
         <!-- image -->
         <div class="w-1/2 p-20 flex justify-center">
             <img src="1L.JPG" alt="">
@@ -115,7 +115,7 @@
         </div>  
     </div>
     <!-- right image -->
-    <div class="flex h-screen bg-[#BBF1FA] gap-3 p-3">
+    <div class="flex h-screen bg-[#C1D8C3] gap-3 p-3">
         
 
         <div class="flex w-1/2 flex-col justify-center p-10">
@@ -129,7 +129,7 @@
         </div>  
     </div>
     <!-- left image -->
-    <div class="flex h-screen bg-[#BBF1FA] gap-3 p-3">
+    <div class="flex h-screen bg-[#C1D8C3] gap-3 p-3">
         <!-- image -->
         <div class="w-1/2 p-20 flex justify-center">
             <img src="1F.JPG" alt="">
@@ -141,7 +141,7 @@
         </div>  
     </div>
     <!-- right image -->
-    <div class="flex h-screen bg-[#BBF1FA] gap-3 p-3">
+    <div class="flex h-screen bg-[#C1D8C3] gap-3 p-3">
         
 
         <div class="flex w-1/2 flex-col justify-center p-10">
@@ -155,7 +155,7 @@
         </div>  
     </div>
     <!-- left image -->
-    <div class="flex h-screen bg-[#BBF1FA] gap-3 p-3">
+    <div class="flex h-screen bg-[#C1D8C3] gap-3 p-3">
         <!-- image -->
         <div class="w-1/2 p-20 flex justify-center">
             <img src="1C.JPG" alt="">
@@ -167,7 +167,7 @@
         </div>  
     </div>
     <!-- right image -->
-    <div class="flex h-screen bg-[#BBF1FA] gap-3 p-3">
+    <div class="flex h-screen bg-[#C1D8C3] gap-3 p-3">
         
 
         <div class="flex w-1/2 flex-col justify-center p-10">
@@ -181,7 +181,7 @@
         </div>  
     </div>
     <!-- left image -->
-    <div class="flex h-screen bg-[#BBF1FA] gap-3 p-3">
+    <div class="flex h-screen bg-[#C1D8C3] gap-3 p-3">
         <!-- image -->
         <div class="w-1/2 p-20 flex justify-center">
             <img src="1P.JPG" alt="">
@@ -193,7 +193,7 @@
         </div>  
     </div>
     <!-- right image -->
-    <div class="flex h-screen bg-[#BBF1FA] gap-3 p-3">
+    <div class="flex h-screen bg-[#C1D8C3] gap-3 p-3">
         
 
         <div class="flex w-1/2 flex-col justify-center p-10">
@@ -207,7 +207,7 @@
         </div>  
     </div>
     <!-- left image -->
-    <div class="flex h-screen bg-[#BBF1FA] gap-3 p-3">
+    <div class="flex h-screen bg-[#C1D8C3] gap-3 p-3">
         <!-- image -->
         <div class="w-1/2 p-20 flex justify-center">
             <img src="1D.JPG" alt="">
@@ -219,7 +219,7 @@
         </div>  
     </div>
     <!-- right image -->
-    <div class="flex h-screen bg-[#BBF1FA] gap-3 p-3">
+    <div class="flex h-screen bg-[#C1D8C3] gap-3 p-3">
         
 
         <div class="flex w-1/2 flex-col justify-center p-10">
@@ -233,7 +233,7 @@
         </div>  
     </div>
     <!-- left image -->
-    <div class="flex h-screen bg-[#BBF1FA] gap-3 p-3">
+    <div class="flex h-screen bg-[#C1D8C3] gap-3 p-3">
         <!-- image -->
         <div class="w-1/2 p-20 flex justify-center">
             <img src="1M.JPG" alt="">
@@ -245,7 +245,7 @@
         </div>  
     </div>
     <!-- right image -->
-    <div class="flex h-screen bg-[#BBF1FA] gap-3 p-3">
+    <div class="flex h-screen bg-[#C1D8C3] gap-3 p-3">
         
 
         <div class="flex w-1/2 flex-col justify-center p-10">
@@ -259,7 +259,7 @@
         </div>  
     </div>
         <!-- left image -->
-    <div class="flex h-screen bg-[#BBF1FA] gap-3 p-3">
+    <div class="flex h-screen bg-[#C1D8C3] gap-3 p-3">
         <!-- image -->
         <div class="w-1/2 p-20 flex justify-center">
             <img src="rrr.JPG" alt="">

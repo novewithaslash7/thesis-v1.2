@@ -129,7 +129,7 @@
             a.document.open();
             a.document.write('<html>');
             a.document.write('<head>');
-            a.document.write('<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"> <style>table, th, td, tr{border: 1px solid black;border-collapse: collapse;}</style><title>Library Monitoring | Print</title></head>')
+            a.document.write('<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"> <style>table, th, td, tr{border: 1px solid black;border-collapse: collapse;}</style><title>Yearly Assesment For ICT Students | Print</title></head>')
             a.document.write('<body >');
             a.document.write(divContents);
             a.document.write('</body></html>');
