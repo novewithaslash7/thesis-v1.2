@@ -30,7 +30,7 @@
                     header("location: ../register.php?msg");
                 }
             }else{
-                echo"Someone already register using this email";
+                echo"Someone already register using this ID Number!";
             }
         }else{
             echo"Password is not the same";
