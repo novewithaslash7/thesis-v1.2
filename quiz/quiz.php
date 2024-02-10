@@ -6,6 +6,19 @@
         // Redirect the user to a login page or display an access denied message
         header("Location: ../index.php"); // Replace login.php with your login page URL
         exit();
+    }else{
+      include "./functions/db.php";
+      $student_id = $_SESSION['student_id'];
+      $SELECT = "SELECT student_id FROM scores WHERE student_id='".$student_id."'";
+      $stmt = $conn->query($SELECT);
+      if($stmt->num_rows != 0){
+        echo"<script>
+            alert('You have been already get the test')
+            window.location.href = '../landing/index.php';
+        </script>";
+      }
+      $conn->close();
+
     }
 ?>
 <!DOCTYPE html>
@@ -24,6 +37,13 @@
     <div class="container">
       <div id="loader"></div>
       <div id="game" class="justify-center flex-column hidden">
+        <div>
+          <h3>
+            <?php
+              echo "".$_SESSION['name']." ".$_SESSION['curriculum']." ".$_SESSION['year']." ".$_SESSION['section']."";
+            ?>
+          </h3>
+        </div>
         <div id="hud">
           <div id="hud-item">
             <p id="progressText" class="hud-prefix">

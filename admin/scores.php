@@ -46,6 +46,10 @@
         <!-- filter form -->
         <div>
             <form class="flex gap-3">
+
+                <!-- studet Id -->
+                <input class="p-3 bg-white border rounded-xl border-solid" type="text" name="student_id" placeholder="Student ID">
+                
                 <!-- year -->
                 <select class="p-3 bg-white border rounded-xl border-solid" name="year" placeholder="Year">
                     <option selected hidden value="">Year</option>
@@ -70,6 +74,8 @@
                     <option value="BS Information Systems">BS Information Systems</option>
 
                 </select>
+
+
                 <!-- ACTION -->
                 <input class="bg-gray-100 p-3 border rounded-xl hover:bg-gray-300 " name="filter" type="submit" value="Filter">
                 <input class="bg-gray-100 p-3 border rounded-xl hover:bg-gray-300 " onclick="printDiv()" type="button" value="Print">
@@ -86,19 +92,39 @@
                     <th>Year</th>
                     <th>Section</th>
                     <th>Curriculum</th>
-                    <th>Score</th>                        
+                    <th>Score</th>
+                    <th>Date Finished</th>                        
                     <th>Classification</th>
                 </tr>
                 <?php 
                     include "./functions/db.php";
 
-                    if(isset($_GET['year']) && isset($_GET['curriculum']) && isset($_GET['section'])){
-                        $year = $_GET['year'];
-                        $curriculum = $_GET['curriculum'];
-                        $section = $_GET['section'];
-                        $query = "SELECT * FROM scores WHERE year='$year' AND section='$section' AND curriculum='$curriculum' ORDER BY name ASC";
-                    }else{
-                        $query = "SELECT * FROM scores";
+                    $query = "SELECT * FROM scores"; // Default query to select all
+
+                    if(isset($_GET['year']) || isset($_GET['curriculum']) || isset($_GET['section']) || isset($_GET['student_id'])){
+                        $query .= " WHERE 1=1"; // Start with 1=1 to simplify adding subsequent conditions
+
+                        if(isset($_GET['year']) && $_GET['year'] !== ''){
+                            $year = $_GET['year'];
+                            $query .= " AND year='$year'";
+                        }
+
+                        if(isset($_GET['curriculum']) && $_GET['curriculum'] !== ''){
+                            $curriculum = $_GET['curriculum'];
+                            $query .= " AND curriculum='$curriculum'";
+                        }
+
+                        if(isset($_GET['section']) && $_GET['section'] !== ''){
+                            $section = $_GET['section'];
+                            $query .= " AND section='$section'";
+                        }
+
+                        if(isset($_GET['student_id']) && $_GET['student_id'] !== ''){
+                            $student_id = $_GET['student_id'];
+                            $query .= " AND student_id='$student_id'";
+                        }
+
+                        $query .= " ORDER BY name ASC"; // Add ordering to the end of the query
                     }
                     
                     $result = mysqli_query($conn, $query);
@@ -112,6 +138,7 @@
                     <td class='p-3'><?php echo $row['section'] ?></td>
                     <td class='p-3'><?php echo $row['curriculum'] ?></td>
                     <td class='p-3'><?php echo $row['score'] ?></td>
+                    <td class='p-3'><?php echo $row['dateFinished'] ?></td>
                     <td class='p-3'><?php echo $row['classification'] ?></td>
                 </tr>
                 <?php 
