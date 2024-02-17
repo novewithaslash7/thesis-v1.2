@@ -44,9 +44,9 @@
         </li>
     </div>
 </div>
-    <div class="w-full  bg-[url(./top.jpg)] bg-cover bg-center  ">
-        <div class="bg-gray-800/40 w-full h-full flex items-center justify-center py-20">
-            <h1 class="font-bold text-white drop-shadow-2xl text-9xl">Faculty</h1>
+    <div class="w-full bg-[#C1D8C3] border-0 border-[#FFEBAD] border-4">
+        <div class=" w-full h-full flex items-center justify-center py-8 ">
+            <h1 class="font-bold text-black drop-shadow-2xl text-9xl">Faculty</h1>
         </div>
         
     </div>

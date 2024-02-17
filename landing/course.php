@@ -45,15 +45,14 @@
         </div>
     </div>
 
-    <div class="w-full  bg-[url(./top.jpg)] bg-cover bg-center  ">
-        <div class="bg-gray-800/40 w-full h-full flex items-center justify-center py-20">
-            <h1 class="font-bold text-white drop-shadow-2xl text-9xl">Courses</h1>
+    <div class="w-full bg-[#C1D8C3] border-0 border-[#FFEBAD] border-4">
+        <div class=" w-full h-full flex items-center justify-center py-8 ">
+            <h1 class="font-bold text-black drop-shadow-2xl text-9xl">Courses</h1>
         </div>
         
     </div>
-
     <!-- left image -->
-    <div class="flex bg-[#C1D8C3] gap-3 p-3 border border-0 border-b-2 border-black">
+    <div class="flex bg-[#C1D8C3] gap-3 p-3 border border-0 border-b-4 border-[#FFEBAD]">
         <!-- image -->
         <div class="w-1/2 p-20 flex justify-center">
             <img src="infotech.jpg." alt="">

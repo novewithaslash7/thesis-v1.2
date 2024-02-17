@@ -23,7 +23,10 @@
             <!-- use text-start to start the paragraph in left and end to right -->
             <h1 class="text-7xl text-center font-bold">WELL DONE!</h1>
             <p class="text-center text-xl mt-5">Congratulations on completing your assessment! You have shown great dedication and commitment to your learning, and we are proud of your achievements. Your results demonstrate your hard work and dedication, and we are confident that you will continue to excel in your studies. Keep up the great work!</p>
+            <a href="../landing" class="pt-8 text-center text-xl mt-5 text-blue-600 hover:underline">Return Home</a>
 </div>
+
+
 
 </body>
 </html>
