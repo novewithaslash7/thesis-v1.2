@@ -25,9 +25,9 @@
             
 <p>Read Instructions Carefully: Before beginning each section, read the instructions and questions carefully to understand the requirements.</p>
 <p>Manage Your Time: Pace yourself throughout the test to allocate enough time for each section or question. Don't get stuck on a single question; move on and return if necessary.</p>
-<p>Answer Each Question: Attempt to answer every question, even if you're unsure. You can revisit unanswered questions if time permits.</p>
+<p>Answer Each Question: Attempt to answer every question, even if you're unsure. Take note that you cannot revisit the questions appearing on your screen if already answered.</p>
 <p>Stay Calm and Focused: Maintain a calm and focused mindset. Take deep breaths if you start to feel anxious, and avoid rushing through the questions.</p>
-<p>Check Your Work: If time allows, review your answers for errors or omissions. Pay attention to detail.</p>
+<p>Check Your Work: Always make sure your answer before proceeding to the enxt question. Pay attention to detail.</p>
             </p>
             <div class="flex justify-center align-center gap-10 p-10">
             <a href="../landing/">
