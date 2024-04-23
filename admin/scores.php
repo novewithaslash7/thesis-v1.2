@@ -75,6 +75,14 @@
 
                 </select>
 
+                <!-- score -->
+                <select class="p-3 bg-white border rounded-xl border-solid" name="classification" placeholder="Classification">
+                    <option selected hidden value="">Classification</option>
+                    <option value="Pass">Pass</option>
+                    <option value="Fail">Fail</option>
+
+                </select>
+
 
                 <!-- ACTION -->
                 <input class="bg-gray-100 p-3 border rounded-xl hover:bg-gray-300 " name="filter" type="submit" value="Filter">
@@ -123,6 +131,11 @@
                         if(isset($_GET['student_id']) && $_GET['student_id'] !== ''){
                             $student_id = $_GET['student_id'];
                             $query .= " AND student_id='$student_id'";
+                        }
+
+                        if(isset($_GET['classification']) && $_GET['classification'] !== ''){
+                            $classification = $_GET['classification'];
+                            $query .= " AND classification='$classification'";
                         }
 
                         $query .= " ORDER BY name ASC"; // Add ordering to the end of the query
