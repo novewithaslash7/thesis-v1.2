@@ -154,7 +154,7 @@
         <div class="p-10 flex justify-center items-start w-full overflow-scroll">
             <div>
                 <table class="table-fixed border border-1 border-solid w-full">
-                
+                <!-- User information kag kung pass or failed tana -->
                     <tr>
                         <th>Student ID</th>
                         <th>First Name</th>

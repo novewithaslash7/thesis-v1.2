@@ -56,7 +56,7 @@
         <div class="w-1/2 p-20 flex justify-center">
             <img src="1k.jpg" alt="">
         </div>
-
+        <!-- Mga Faculty  -->
         <div class="flex w-1/2 flex-col justify-center items-end p-10">
             <h1 class="text-7xl text-end font-bold">DR. ROSIE JANE P. SIOSAN, PhD</h1>
             <p class="text-end text-2xl mt-5 text-2xl">DIRECTOR, School of ICT</p>

@@ -1,7 +1,7 @@
 <?php
 
     include "./db.php";
-
+// input credentials here
     if(isset($_POST['register'])){
         $firstName = $_POST['firstName'];
         $middleName = $_POST['middleName'];
@@ -12,7 +12,7 @@
         $student_id = $_POST['student_id'];
         $password = $_POST['password'];
         $re_password = $_POST['re_password'];
-
+// mag get ka data sa gn input hehe
         $SELECT = "SELECT student_id FROM users WHERE student_id='".$student_id."'";
         $INSERT = "INSERT INTO users (student_id, firstName, middleName, lastName, curriculum, year, section, password) VALUES (?,?,?,?,?,?,?,?)";
         if($password == $re_password){

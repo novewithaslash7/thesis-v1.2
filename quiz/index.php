@@ -21,6 +21,7 @@
         <div class="w-1/2 p-5 bg-gray-200">
             <p class="text-center font-bold text-3xl mb-5">Instruction</p>
             <!-- do proper paragraph with BR's -->
+       <!-- Sa instruction ja -->
             <p>During the Test:</p>
             
 <p>Read Instructions Carefully: Before beginning each section, read the instructions and questions carefully to understand the requirements.</p>

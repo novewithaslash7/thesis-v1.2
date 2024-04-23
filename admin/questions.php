@@ -118,6 +118,7 @@
                 <table class="table-fixed border border-1 border-solid w-full">
                 
                 <tr>
+                    <!-- Correct answer sa question  -->
                     <th>No.</th>
                     <th>Question</th>
                     <th>1 Answer</th>

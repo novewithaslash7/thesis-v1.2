@@ -86,6 +86,7 @@
         <div id="printable">
             <script src="https://cdn.tailwindcss.com"></script>
             <table class="table-fixed border border-1 border-solid w-full">
+                <!-- results ka user sa assessment -->
                 <tr>
                     <th>Student ID</th>
                     <th>Name</th>

@@ -35,7 +35,7 @@
             <img class="h-[70px]" src="./ICT.png">
             
         </div>
-
+<!-- Mga button sa navigation -->
         <div class="mr-10">
             <li class="flex flex-row gap-10 items-center">
                 <ul><a class="hover:underline font-bold" href="./index.php">Home</a></ul>
@@ -57,6 +57,7 @@
             <p class="text-end text-xl mt-5">An ICT Assessment Test is a comprehensive evaluation of an individual's proficiency in information technology, covering topics such as hardware, software, networking, and cybersecurity. It is commonly used in education and employment settings to assess digital competence and readiness.</p>
             
             <a href="../quiz/index.php">
+                <!-- Button sa assessment -->
                <button class="w-25 border-4 border-solid border-black rounded-full hover:bg-[#FFEBAD] p-5 mt-10">
                     <p class="text-3xl font-bold">Start Test</p>
                 </button> 

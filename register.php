@@ -10,6 +10,7 @@
     <script src="./tailwind/3.3.5.js"></script>
 </head>
 <body>
+    <!-- background cover sa landing page -->
     <div class="flex justify-center h-screen items-center bg-[url(./bg1.JPG)] bg-cover">
         <div class="p-5
             w-1/2
@@ -27,7 +28,7 @@
 
                 
                 <!-- <input required class="p-3 w-full border rounded-xl border-solid" type="text" name="student_id" placeholder="Curriculum"> -->
-
+<!-- selection_drop down menu -->
                 <div class="flex w-full flex-row gap-2">
                     <select class="p-3 grow border rounded-xl border-solid" name="curriculum" placeholder="curriculum">
                         <option selected hidden value="">Curriculum</option>
@@ -59,7 +60,7 @@
                     <input required class="p-3 grow border rounded-xl border-solid" type="password" name="password" placeholder="Password">
                     <input required class="p-3 grow border rounded-xl border-solid" type="password" name="re_password" placeholder="Re-Enter Password">
                 </div>
-                
+                <!-- register button -->
                 <input class="bg-gray-100 p-3 w-full border rounded-xl hover:bg-[#F3E99F] " name="register" type="submit" value="REGISTER">
                 <!-- <a class="hover:bg-[#F3E99F]" href="./register.php"></a> -->
             </form>

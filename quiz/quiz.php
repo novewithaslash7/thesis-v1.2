@@ -18,7 +18,7 @@
         </script>";
       }
       $conn->close();
-
+// Sa quiz dun ja kung e pa debug ni maam meg
     }
 ?>
 <!DOCTYPE html>
@@ -60,6 +60,7 @@
             <!-- <h1 class="hud-main-text" id="score">
               0
             </h1> -->
+         <!-- Mga pirilian nga answer sa questions -->
           </div>
         </div>
         <h3 id="question"></h3>
